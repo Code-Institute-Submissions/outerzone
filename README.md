@@ -15,7 +15,7 @@
 2. [User Experience](#user-experience)
     - [Target Audience](#target-audience)
     - [Client Goals](#client-goals)
-    - [User Aim](#user-aim)
+    - [User Goals](#user-goals)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
 3. [Design](#design)
@@ -52,8 +52,18 @@ The target audience are:
 - located anywhere in the world
 
 ### Client Goals
+The client is a Glasgow-based independent record label, who specialises in electronic music. Prior to the creation 
+of this website, their internet presence was spread across a number of different websites, mainly [Soundcloud](https://soundcloud.com/outer-zone) 
+and [Bandcamp](https://outerzone.bandcamp.com/). 
 
-### User Aim 
+The client requested this website in order to:
+* increase the profile of the record label.
+* showcase the label's artists, their releases, upcoming gigs and media attention.
+* provide a one-stop shop for users to find out more about the label and buy their records.
+* create a community where electronic music fans can speak with like-minded people.
+* allow others within the industry, such as distributors, gig promoters or journalists, to easily get in touch with the label.
+
+### User Goals 
 ### User Stories
 ### Wireframes
 ---
