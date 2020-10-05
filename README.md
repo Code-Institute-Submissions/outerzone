@@ -14,7 +14,7 @@
 1. [Introduction](#introduction)
 2. [User Experience](#user-experience)
     - [Target Audience](#target-audience)
-    - [User Journey](#user-journey)
+    - [Client Goals](#client-goals)
     - [User Aim](#user-aim)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
@@ -45,7 +45,14 @@ records and merchandise, rate their purchases and speak with fellow fans through
 ---
 ## User Experience
 ### Target Audience
-### User Journey
+The target audience are:
+- fans of electronic music
+- predominately in the 20-45 age bracket
+- English speaking
+- located anywhere in the world
+
+### Client Goals
+
 ### User Aim 
 ### User Stories
 ### Wireframes
@@ -53,6 +60,19 @@ records and merchandise, rate their purchases and speak with fellow fans through
 ## Design
 ---
 ## Features
+
+* Register/Login
+* Update Details
+* Add Avatar
+* Join Chatroom
+* Rate Tunes
+* Buy Records and Merchandise
+* Message Record Label
+* Profiles on each Artist
+* Clips of tunes (soundcloud API?)
+* Upcoming Events
+* Admin access to update details
+
 ### Features on every page
 ### Features to be implemented
 ---
@@ -77,17 +97,7 @@ records and merchandise, rate their purchases and speak with fellow fans through
 
 
 
-Register/Login
-Update Details
-Add Avatar
-Join Chatroom
-Rate Tunes
-Buy Records and Merchandise
-Message Record Label
-Profiles on each Artist
-Clips of tunes (soundcloud API?)
-Upcoming Events
-Admin access to update details
+
 
 
 
