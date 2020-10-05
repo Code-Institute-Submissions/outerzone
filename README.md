@@ -13,8 +13,8 @@
 ## Contents Table
 1. [Introduction](#introduction)
 2. [User Experience](#user-experience)
-    - [Target Audience](#target-audience)
     - [Client Goals](#client-goals)
+    - [Target Audience](#target-audience)
     - [User Goals](#user-goals)
     - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
@@ -42,14 +42,9 @@
 A website for record label, Outer Zone, in order to showcases the label's artists and build a community of fans.
 Users are able to find out more about the artists, their releases and upcoming gigs. Those who register can buy 
 records and merchandise, rate their purchases and speak with fellow fans through the Outer Zone Forum.
+
 ---
 ## User Experience
-### Target Audience
-The target audience are:
-- fans of electronic music
-- predominately in the 20-45 age bracket
-- English speaking
-- located anywhere in the world
 
 ### Client Goals
 The client is a Glasgow-based independent record label, who specialises in electronic music. Prior to the creation 
@@ -63,8 +58,26 @@ The client requested this website in order to:
 * create a community where electronic music fans can speak with like-minded people.
 * allow others within the industry, such as distributors, gig promoters or journalists, to easily get in touch with the label.
 
-### User Goals 
+### Target Audience
+The target audience are:
+- fans of electronic music
+- predominately in the 20-45 age bracket
+- English speaking
+- located anywhere in the world
+
+### User Goals
+Users visit the website because they want:
+* to find out more about the label and their artists.
+* to buy a record or other merchandise.
+* to review a record they recently bought.
+* a way to connect with an online electronic music community.
+* details on upcoming gigs.
+
 ### User Stories
+1. As a new visitor, I want to find out more about Outer Zone and their artists.
+2. As a new visitor, I want to register an account so I can connect with others in the Outer Zone forum.
+3. As a 
+
 ### Wireframes
 ---
 ## Design
