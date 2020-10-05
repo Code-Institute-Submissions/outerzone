@@ -75,8 +75,17 @@ Users visit the website because they want:
 
 ### User Stories
 1. As a new visitor, I want to find out more about Outer Zone and their artists.
-2. As a new visitor, I want to register an account so I can connect with others in the Outer Zone forum.
-3. As a 
+2. As a new visitor, I want to browse Outer Zone's releases and merchandise.
+3. As a new visitor, I want to register an account so I can connect with others in the Outer Zone forum.
+4. As a registered user, I want to purchase a record and other merchandise.
+5. As a registered user, I want to update my account details, payment details and avatar.
+6. As a registered user, I want to get involved in discussion on the online forum.
+7. As a registered user, I want to edit and delete my posts.
+8. As a registered user, I want to rate and review my purchases.
+9. As someone within the electronic music industry, I want to understand more about Outer Zone and the types of sets their artists play.
+10. As someone within the electronic music industry, I want to contact Outer Zone in order to work with them.
+11. As admin for the site, I want to be able to moderate the forum and delete posts, where necessary.
+12. As admin for the site, I want to be able to view all user accounts and their purchases.
 
 ### Wireframes
 ---
