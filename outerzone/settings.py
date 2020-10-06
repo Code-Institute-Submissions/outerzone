@@ -81,6 +81,16 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+# Temporarily logs emails to the console so allauth can send confirmation emails when users register
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # allows authentication using either email or username
+ACCOUNT_EMAIL_REQUIRED = True 
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True 
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+
 WSGI_APPLICATION = 'outerzone.wsgi.application'
 
 
