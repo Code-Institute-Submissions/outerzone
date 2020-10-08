@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "name": "Triple M",
+            "artist": "Modus",
+            "price": 8.99,
+            "image": "triplem.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "Triple M, Part 2",
+            "artist": "Modus",
+            "price": 9.99,
+            "image": "triplem2.jpg"
+        }
+    },  
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "Mario",
+            "artist": "Solid Blake",
+            "price": 8.99,
+            "image": "mario.jpg"
+        }
+    }, 
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "name": "Plastic Entertainment",
+            "artist": "Alfie",
+            "price": 7.99,
+            "image": "plasticentertainment.jpg"
+        }
+    }, 
+]
