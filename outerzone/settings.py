@@ -38,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites', # creates callback urls when connecting social media accounts
+    'django.contrib.sites',  # creates callback urls when connecting social media accounts
     'allauth',
-    'allauth.account', # allows logging in/out, registration and password resets
-    'allauth.socialaccount', # logging in using social media logins
+    'allauth.account',  # allows logging in/out, registration and password resets
+    'allauth.socialaccount',  # logging in using social media logins
     'home',
     'products',
 ]
@@ -69,7 +69,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth to access http request objects
+                'django.template.context_processors.request',  # required by allauth to access http request objects
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -90,10 +90,10 @@ SITE_ID = 1
 # Temporarily logs emails to the console so allauth can send confirmation emails when users register
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # allows authentication using either email or username
-ACCOUNT_EMAIL_REQUIRED = True 
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'  # allows authentication using either email or username
+ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True 
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
@@ -151,4 +151,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'),)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
