@@ -5,9 +5,20 @@
     font-family: 'Teko', sans-serif;
 }
 
+/*--Background--*/
+
+body {
+    background-image: url('/media/ozbackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
 /*--Links--*/
 
-a {
+a,
+.navbar-toggler-icon {
     color: #ffffff;
 }
 
