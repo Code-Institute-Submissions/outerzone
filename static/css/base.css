@@ -1,5 +1,27 @@
+/*--Fonts--*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap');
+
+.heading-font {
+    font-family: 'Teko', sans-serif;
+}
+
+/*--Links--*/
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #8a8a8a;
+}
+
 /*--Nav Bar--*/
 
 .navbar-brand img {
     height: 10vh;
+}
+
+.navbar {
+    background: #000000;
+    color: #ffffff;
 }
