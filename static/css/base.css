@@ -1,6 +1,5 @@
 /*--Nav Bar--*/
 
-.navbar-brand {
-    background-color: purple;
-    font-size: 5vh;
+.navbar-brand img {
+    height: 10vh;
 }
