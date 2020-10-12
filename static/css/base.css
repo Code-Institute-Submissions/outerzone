@@ -28,8 +28,17 @@ a:hover {
 
 /*--Nav Bar--*/
 
+.nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar-font-size {
+    font-size: 2em;
+}
+
 .navbar-brand img {
-    height: 10vh;
+    height: 6em;
 }
 
 .navbar {
