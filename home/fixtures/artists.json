@@ -1,0 +1,29 @@
+[
+    {
+        "pk": 1,
+        "model": "artists.artists",
+        "fields": {
+            "name": "Modus",
+            "description": "Producer and DJ from Glasgow",
+            "image": "modussquirrel.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "artists.artists",
+        "fields": {
+            "name": "Solid Blake",
+            "description": "DJ and producer from Glasgow, operating via Copenhagen",
+            "image": "solidblake.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "artists.artists",
+        "fields": {
+            "name": "Alfie",
+            "description": "DJ and producer from Perth",
+            "image": "alfie.jpg"
+        }
+    },    
+]
