@@ -55,3 +55,9 @@ a:hover {
     background: #000000;
     color: #ffffff;
 }
+
+/*--Home--*/
+
+.artist-thumb {
+    border-radius: 0;
+}
