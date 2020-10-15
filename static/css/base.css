@@ -66,3 +66,12 @@ i {
 .artist-thumb {
     border-radius: 0;
 }
+
+/*--Products--*/
+
+.product-card,
+.card-img-top {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+}
