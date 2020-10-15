@@ -2,5 +2,19 @@
 {% load static %} 
 
 {% block content %}
-    {{ products }}
+<div class="container-fluid">
+    <div class="row">
+    {% for product in products %}
+        <div class="col">
+            <div class="card product-card">
+                <img class="card-img-top" src="/media/{{ product.image }}" alt="Card image cap">
+                <div class="card-body heading-font">
+                    <h3>{{ product.artist }}</h3>
+                    <h4>£{{ product.price }}</h4>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
 {% endblock %}

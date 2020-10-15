@@ -136,6 +136,9 @@ Users visit the website because they want:
 **** MY NOTES ONLY - NOT PART OF FINAL README ****
 # Questions
 * Where do I store JSON if data needs to be accessed in multiple apps?
+# To Do
+* Change navbar font to white, whilst still being able to see burger.
+* Get MEDIA_URL to work on html (nav logo and product images)
 
 # Project Requirements
 ## Main Technologies
