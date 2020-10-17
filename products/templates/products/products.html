@@ -3,6 +3,12 @@
 
 {% block content %}
 <div class="container-fluid">
+    <div class="row main-font justify-content-end">
+        <form class="form" method="GET" action="{% url 'products' %}">
+            <input class="mr-sm-2" type="text" aria-label="Search">
+            <input type="submit" value="Search">    
+        </form>
+    </div>
     <div class="row">
     {% for product in products %}
         <div class="col-xs-12 col-sm-6 col-lg-3">
