@@ -140,6 +140,7 @@ Users visit the website because they want:
 * Change navbar font to white, whilst still being able to see burger.
 * Get MEDIA_URL to work on html (nav logo and product images)
 * Home - center container on small screens
+* Products - search bar not working
 
 # Project Requirements
 ## Main Technologies
