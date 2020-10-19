@@ -3,7 +3,27 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row main-font justify-content-end">
+    <div class="row main-font justify-content-between">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownArtist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter by Artist
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownArtist">
+                <a class="dropdown-item" href="#">Alfie</a>
+                <a class="dropdown-item" href="#">Solid Blake</a>
+                <a class="dropdown-item" href="#">Modus</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort By
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownSort">
+                <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price</a>
+                <a class="dropdown-item" href="{% url 'products' %}?sort=artist&direction=asc">Artist</a>
+                <a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">Title</a>
+            </div>
+        </div>
         <form class="form" method="GET" action="{% url 'products' %}">
             <input class="mr-sm-2" type="text" aria-label="Search" name="q">
             <input type="submit" value="Search">    

@@ -139,8 +139,11 @@ Users visit the website because they want:
 # To Do
 * Change navbar font to white, whilst still being able to see burger.
 * Get MEDIA_URL to work on html (nav logo and product images)
-* Home - center container on small screens
+* Products - Get filter by Artist to work.
+* Products - Fix sort by name.
+# Done 
 * Products - search bar not working
+* Home - center container on small screens
 
 # Project Requirements
 ## Main Technologies
