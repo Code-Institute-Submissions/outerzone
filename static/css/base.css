@@ -37,6 +37,17 @@ a:hover {
     text-decoration: none;
 }
 
+.btn {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background: #8a8a8a;
+    color: #ffffff;
+}
+
 /*--Nav Bar--*/
 
 .nav-item {

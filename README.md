@@ -140,10 +140,13 @@ Users visit the website because they want:
 * Change navbar font to white, whilst still being able to see burger.
 * Get MEDIA_URL to work on html (nav logo and product images)
 * Products - Get filter by Artist to work.
-* Products - Fix sort by name.
+* Products - use for statement to run through filter artists
+* Change btn hover background-color to wine/turquoise?
+
 # Done 
 * Products - search bar not working
 * Home - center container on small screens
+* Products - Fix sort by name.
 
 # Project Requirements
 ## Main Technologies
