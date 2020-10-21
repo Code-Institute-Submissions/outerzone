@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7 main-font">
+            {% if basket_items %}    
+
+            {% else %}
+                <p>Your bag is empty</p>
+                <a class="btn" href="{% url 'products' %}">Return to Shop</a>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
