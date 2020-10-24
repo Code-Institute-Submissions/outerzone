@@ -10,8 +10,8 @@ def basket_contents(request):
     total = 0
     product_count = 0
     delivery = 3.95
-    grand_total = total + delivery
     basket = request.session.get('basket', {})
+    grand_total = 0
 
     for item_id, quantity in basket.items():
         product = get_object_or_404(Product, pk=item_id)
@@ -21,7 +21,10 @@ def basket_contents(request):
             'item_id': item_id,
             'quantity': quantity,
             'product': product,
+            'total': total,
         })
+
+    grand_total += total
 
     context = {
         'basket_items': basket_items,

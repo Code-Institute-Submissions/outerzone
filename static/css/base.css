@@ -72,11 +72,13 @@ i {
     color: #ffffff;
 }
 
-/*--Home--*/
+/*--Images--*/
 
-.artist-thumb {
+.img-thumbnail {
     border-radius: 0;
 }
+
+
 
 /*--Products--*/
 

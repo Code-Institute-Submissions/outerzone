@@ -141,6 +141,7 @@ Users visit the website because they want:
 * Get MEDIA_URL to work on html (nav logo and product images)
 * Products - Get filter by Artist to work.
 * Products - use for statement to run through filter artists
+* Products - fix margins and positioning of basket
 * Change btn hover background-color to wine/turquoise?
 
 # Done 
