@@ -1,0 +1,14 @@
+<div class="ml-auto mr-4 mini-basket">
+    <div class="row justify-content-center">
+        <div class="col">
+            <i class="fas fa-record-vinyl"></i>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+    {% if grand_total %}
+        £{{ grand_total|floatformat:2 }}
+    {% else %}
+        £0.00
+    {% endif %}
+    </div>
+</div>

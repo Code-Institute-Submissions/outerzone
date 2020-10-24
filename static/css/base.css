@@ -72,13 +72,15 @@ i {
     color: #ffffff;
 }
 
+.mini-basket {
+    font-size: 1.7em;
+}
+
 /*--Images--*/
 
 .img-thumbnail {
     border-radius: 0;
 }
-
-
 
 /*--Products--*/
 
