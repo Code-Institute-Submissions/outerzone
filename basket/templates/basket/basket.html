@@ -12,7 +12,7 @@
                             <th class="d-none d-sm-block" scope="col">Image</th>
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
-                            <th scope="col">Qty</th>
+                            <th class="text-right" scope="col">Qty</th>
                             <th  class="text-right" scope="col">Sub</th>
                         </tr>
                     </thead>
@@ -22,12 +22,12 @@
                             <td class="d-none d-sm-block"><img class="img-thumbnail basket-thumb" src="/media/{{ item.product.image }}" alt="{{ item.product.name }}"></td>
                             <td>{{ item.product.name }}</td>
                             <td>£{{ item.product.price }}</td>
-                            <td>{{ item.quantity }}</td>
-                            <td class="text-right">£{{ item.sub_total }}</td>
+                            <td class="text-right">x {{ item.quantity }}</td>
+                            <td class="text-right">= £{{ item.sub_total }}</td>
                         </tr>
                     {% endfor %}
                         <tr>
-                            <td colspan="5" class="text-right"><h5>Basket Total = £{{ total }}</h5></td>
+                            <td colspan="5" class="text-right basket-total"><h5>Basket Total = £{{ total }}</h5></td>
                         </tr>
                     </tbody>
                 </table>
@@ -38,7 +38,7 @@
         </div>
         <div class="row justify-content-end">
             <div class="col-auto">
-                <a class="btn" href="{% url 'products' %}">Return to Shop</a>
+                <a class="btn secondary-btn" href="{% url 'products' %}">Return to Shop</a>
                 <a class="btn" href="">Checkout</a>
             </div>
         </div>

@@ -48,6 +48,12 @@ a:hover {
     color: #ffffff;
 }
 
+.secondary-btn {
+    background: none;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
 /*--Nav Bar--*/
 
 .nav-item {
@@ -83,7 +89,7 @@ i {
 }
 
 .basket-thumb {
-    width: 4em;
+    width: 6em;
 }
 
 /*--Table--*/
@@ -91,6 +97,11 @@ i {
 .table td,
 .table thead th {
     border: none;
+}
+
+.basket-total h5 {
+    border-top: #ffffff 2px solid;
+    padding-top: 2rem;
 }
 
 /*--Products--*/
