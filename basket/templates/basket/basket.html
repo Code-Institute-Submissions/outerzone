@@ -2,9 +2,9 @@
 {% load static %} 
 
 {% block content %}
-    <div class="container">
+    <div class="container main-font mt-4">
         <div class="row">
-            <div class="col-12 main-font mt-4">
+            <div class="col-12">
             {% if basket_items %}    
                 <table class="table">
                     <thead>
@@ -13,7 +13,7 @@
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
-                            <th scope="col">Sub</th>
+                            <th  class="text-right" scope="col">Sub</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -23,14 +23,21 @@
                             <td>{{ item.product.name }}</td>
                             <td>£{{ item.product.price }}</td>
                             <td>{{ item.quantity }}</td>
-                            <td>£{{ item.sub_total }}</td>
+                            <td class="text-right">£{{ item.sub_total }}</td>
                         </tr>
                     {% endfor %}
+                        <tr>
+                            <td colspan="5" class="text-right"><h5>Basket Total = £{{ total }}</h5></td>
+                        </tr>
                     </tbody>
                 </table>
             {% else %}
                 <p>Your basket is empty</p>
             {% endif %}
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-auto">
                 <a class="btn" href="{% url 'products' %}">Return to Shop</a>
                 <a class="btn" href="">Checkout</a>
             </div>
