@@ -86,6 +86,13 @@ i {
     width: 4em;
 }
 
+/*--Table--*/
+
+.table td,
+.table thead th {
+    border: none;
+}
+
 /*--Products--*/
 
 .product-card,
