@@ -82,6 +82,10 @@ i {
     border-radius: 0;
 }
 
+.basket-thumb {
+    width: 4em;
+}
+
 /*--Products--*/
 
 .product-card,
