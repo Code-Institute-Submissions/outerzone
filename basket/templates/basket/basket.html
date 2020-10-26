@@ -22,8 +22,17 @@
                             <td class="d-none d-sm-block"><img class="img-thumbnail basket-thumb" src="/media/{{ item.product.image }}" alt="{{ item.product.name }}"></td>
                             <td>{{ item.product.name }}</td>
                             <td>£{{ item.product.price }}</td>
-                            <td class="text-right">x {{ item.quantity }}</td>
-                            <td class="text-right">= £{{ item.sub_total }}</td>
+                            <td class="text-right">
+                                <form class="change-quantity" method="POST" action="">
+                                    {% csrf_token %}
+                                    <div class="form-row justify-content-end">
+                                        <input class="item_quantity" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                    </div>  
+                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                </form>
+                                <a class="delete-item" id="delete_{{ item.item_id }}" href=""><i class="fas fa-trash"></i></a>
+                            </td>
+                            <td class="text-right">£{{ item.sub_total }}</td>
                         </tr>
                     {% endfor %}
                         <tr>
@@ -43,4 +52,30 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+    <script type="text/javascript">
+        // Change Quantity
+        $('.item_quantity').keypress(function(e) {
+            let form = $(this).prev('.change-quantity');
+            form.submit();
+        })
+        
+        // Delete item
+        $('.delete-item').click(function(e) {
+            let csrfToken = "{{ csrf_token }}";
+            let itemId = $(this).attr('id').split('delete_')[1];
+            let url = 'basket/delete/${itemId}';
+            let data = {'csrfmiddlewaretoken'}: csrfToken};
+
+            $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+        })
+    </script>
+
 {% endblock %}
