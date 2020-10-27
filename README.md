@@ -142,6 +142,7 @@ Users visit the website because they want:
 * Products - Get filter by Artist to work.
 * Products - use for statement to run through filter artists
 * Products - fix margins and positioning of basket
+* Basket - fix update quantity and delete
 * Change btn hover background-color to wine/turquoise?
 
 # Done 
