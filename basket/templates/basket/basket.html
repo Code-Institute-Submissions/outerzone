@@ -27,8 +27,7 @@
                                     {% csrf_token %}
                                     <div class="form-row justify-content-end">
                                         <input class="item-quantity" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
-                                    </div>  
-                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    </div>
                                 </form>
                                 <a class="delete-item" id="delete_{{ item.item_id }}"><i class="fas fa-trash"></i></a>
                             </td>
@@ -48,7 +47,7 @@
         <div class="row justify-content-end">
             <div class="col-auto">
                 <a class="btn secondary-btn" href="{% url 'products' %}">Return to Shop</a>
-                <a class="btn" href="">Checkout</a>
+                <a class="btn" href="{% url 'checkout' %}">Checkout</a>
             </div>
         </div>
     </div>

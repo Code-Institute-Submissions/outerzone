@@ -4,6 +4,14 @@
 {% block content %}
     <div class="container main-font mt-4">
         <div class="row">
+            <div class="col">
+                <a href="{% url 'product_detail' item.product.id %}">
+                    <img src="/media/{{ item.product.image}}" alt="{{ product.name }}">
+                </a>
+                {{ item.product.name }}
+                {{ item.quantity }}
+                {{ item.product.price }}
+            </div>
             <div class="col-12">
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
@@ -26,6 +34,17 @@
                         <a href="{% url 'account_login' %}">Login</a>
                     </label>
                 {% endif %}
+
+                    <!--For Stripe element-->
+                    <div id="card-element"></div>
+                    <!--Display Errors-->
+                    <div id="card-errors" role="alert"></div>
+
+                    <a href="{% url 'view_bag' %}">Adjust Basket</a>
+                    <button id="submit-button">
+                        Complete Order
+                    </button>
+                    <p>£{{ grand_total/floatformat:2 }}</p>
                 </form>
             </div>
         </div>
