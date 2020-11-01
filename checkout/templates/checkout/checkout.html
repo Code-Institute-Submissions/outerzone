@@ -5,12 +5,28 @@
     <div class="container main-font mt-4">
         <div class="row">
             <div class="col">
-                <a href="{% url 'product_detail' item.product.id %}">
-                    <img src="/media/{{ item.product.image}}" alt="{{ product.name }}">
-                </a>
-                {{ item.product.name }}
-                {{ item.quantity }}
-                {{ item.product.price }}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="d-none d-sm-block" scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th class="text-right" scope="col">Qty</th>
+                            <th  class="text-right" scope="col">Sub</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in basket_items %}
+                        <tr>
+                            <td class="d-none d-sm-block"><img class="img-thumbnail basket-thumb" src="/media/{{ item.product.image }}" alt="{{ item.product.name }}"></td>
+                            <td>{{ item.product.name }}</td>
+                            <td>£{{ item.product.price }}</td>
+                            <td class="text-right" >{{ item.quantity }}</td>
+                            <td class="text-right">£{{ item.sub_total }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
             </div>
             <div class="col-12">
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -40,11 +56,11 @@
                     <!--Display Errors-->
                     <div id="card-errors" role="alert"></div>
 
-                    <a href="{% url 'view_bag' %}">Adjust Basket</a>
+                    <a href="{% url 'view_basket' %}">Adjust Basket</a>
                     <button id="submit-button">
                         Complete Order
                     </button>
-                    <p>£{{ grand_total/floatformat:2 }}</p>
+                    <p>£{{ grand_total|floatformat:2 }}</p>
                 </form>
             </div>
         </div>
