@@ -5,13 +5,28 @@
     <div class="container main-font mt-4">
         <div class="row">
             <div class="col-12">
-                
-            </div>
-        </div>
-        <div class="row justify-content-end">
-            <div class="col-auto">
-                <a class="btn secondary-btn" href="{% url 'products' %}">Return to Shop</a>
-                <a class="btn" href="">Checkout</a>
+                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                    {% csrf_token %}
+                    {{ order_form.full_name | as_crispy_field }}
+                    {{ order_form.email | as_crispy_field }}
+                    {{ order_form.phone_number | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    {{ order_form.town_or_city | as_crispy_field }}
+                    {{ order_form.street_address1 | as_crispy_field }}
+                    {{ order_form.street_address2 | as_crispy_field }}
+                    {{ order_form.county | as_crispy_field }}
+
+                {% if user.is_authenticated %}
+                    <label for="id-save-info">Save delivery information to my profile</label>
+                    <input type="checkbox" id="id-save-info" name="save-info" checked>
+                {% else %}
+                    <label for="id-save-info">
+                        <a href="{% url 'account_signup' %}">Create an account</a>
+                        <a href="{% url 'account_login' %}">Login</a>
+                    </label>
+                {% endif %}
+                </form>
             </div>
         </div>
     </div>
