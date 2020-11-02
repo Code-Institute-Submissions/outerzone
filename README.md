@@ -144,6 +144,7 @@ Users visit the website because they want:
 * Products - fix margins and positioning of basket
 * Basket - fix update quantity and delete
 * Change btn hover background-color to wine/turquoise?
+* Checkout - move complete order btn to right
 
 # Done 
 * Products - search bar not working

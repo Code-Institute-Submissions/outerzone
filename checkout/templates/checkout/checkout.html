@@ -1,5 +1,5 @@
 {% extends "base.html" %} 
-{% load static %} 
+{% load static %}
 
 {% block content %}
     <div class="container main-font mt-4">
@@ -12,7 +12,7 @@
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th class="text-right" scope="col">Qty</th>
-                            <th  class="text-right" scope="col">Sub</th>
+                            <th class="text-right" scope="col">Sub</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,11 +67,18 @@
                     <!--Display Errors-->
                     <div id="card-errors" role="alert"></div>
 
-                    <button class="text-right btn" id="submit-button">
+                    <button class="btn" id="submit-button">
                         Complete Order
                     </button>
                 </form>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
