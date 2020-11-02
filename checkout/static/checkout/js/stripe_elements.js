@@ -12,10 +12,9 @@ let style = {
     base: {
         color: '#000',
         fontFamily: '"Oswald", sans-serif',
-        fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
-            color: '#aab7c4'
+            color: '#8a8a8a'
         }
     },
     invalid: {
@@ -27,3 +26,18 @@ let style = {
 let card = elements.create('card', {style:style});
 
 card.mount('#card-element');
+
+// Handles validation errors
+card.addEventListener('change', function(event) {
+    let errorDiv = document.querySelector('#card-errors');
+    if (event.error) {
+        let html = `
+            <span class="icon" role="alert">
+                <i class="fas fa-times"></i>
+            </span>
+            <span>${event.error.message}</span>`
+        $(errorDiv).html(html);
+    } else {
+        errorDiv.textContent = '';
+    }
+});
