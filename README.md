@@ -145,6 +145,8 @@ Users visit the website because they want:
 * Basket - fix update quantity and delete
 * Change btn hover background-color to wine/turquoise?
 * Checkout - move complete order btn to right
+* Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
+* Testing - Stripe has dummy credit card details that show different errors
 
 # Done 
 * Products - search bar not working
