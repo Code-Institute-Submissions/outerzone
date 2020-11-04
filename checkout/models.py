@@ -26,7 +26,7 @@ class Order(models.Model):
 
     def update_total(self):
         """ Update grand total each time a product is added """
-        self.grand_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.grand_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         self.save()
 
     def save(self, *args, **kwargs):
