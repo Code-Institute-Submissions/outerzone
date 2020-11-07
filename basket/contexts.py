@@ -8,6 +8,7 @@ def basket_contents(request):
 
     basket_items = []
     grand_total = 0
+    sub_total = 0
     product_count = 0
     basket = request.session.get('basket', {})
 

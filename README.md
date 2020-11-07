@@ -120,6 +120,14 @@ Users visit the website because they want:
 ### Problem Solving
 ---
 ## Deployment 
+
+pip3 install:
+django
+django-allauth
+django-crispy-forms
+stripe
+Pillow
+
 ---
 ## Credits 
 ### Content 
