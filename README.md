@@ -155,6 +155,7 @@ Pillow
 * Checkout - move complete order btn to right
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
+* Checkout - grand total not pulling through to admin?
 
 # Done 
 * Products - search bar not working
