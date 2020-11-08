@@ -155,12 +155,13 @@ Pillow
 * Checkout - move complete order btn to right
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
-* Checkout - grand total not pulling through to admin?
+* Checkout - Do I need extra css file for checkout?
 
 # Done 
 * Products - search bar not working
 * Home - center container on small screens
 * Products - Fix sort by name.
+* Checkout - grand total not pulling through to admin?
 
 # Project Requirements
 ## Main Technologies

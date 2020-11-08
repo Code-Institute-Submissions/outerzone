@@ -9,7 +9,68 @@
     <div class="container main-font mt-4">
         <div class="row">
             <div class="col">
-                Success
+                Order Confirmation
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Order Number: 
+            </div>
+            <div class="col">
+                {{ order.order_number }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Order Date: 
+            </div>
+            <div class="col">
+                {{ order.date }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Name: 
+            </div>
+            <div class="col">
+                {{ order.full_name }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Delivery Address: 
+            </div>
+            <div class="col">
+                {{ order.street_address1 }}
+            {% if order.street_address2 %}
+                {{ order.street_address2 }}
+            {% endif %}
+                {{ order.town_or_city }}
+            {% if order.postcode %}
+                {{ order.postcode }}
+            {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Order Details: 
+            </div>
+            <div class="col">
+                <div class="p-0 row">
+                {% for item in order.lineitems.all %}
+                    <div class="col-12">
+                        {{ item.product.name }} x {{ item.quantity }}
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Order Total: 
+            </div>
+            <div class="col">
+                £{{ order.grand_total }}
             </div>
         </div>
     </div>
