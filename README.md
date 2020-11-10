@@ -127,6 +127,7 @@ django-allauth
 django-crispy-forms
 stripe
 Pillow
+django-countries
 
 ---
 ## Credits 
