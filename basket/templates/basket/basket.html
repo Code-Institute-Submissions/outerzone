@@ -29,6 +29,7 @@
                                         <input class="item-quantity" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                     </div>
                                 </form>
+                                <a href="#" class="update" id="update_{{ item.item_id }}"><i class="fas fa-edit"></i></a>
                                 <a href="#" class="delete-item" id="delete_{{ item.item_id }}"><i class="fas fa-trash"></i></a>
                             </td>
                             <td class="text-right">£{{ item.sub_total }}</td>
@@ -58,7 +59,7 @@
 
     <script type="text/javascript">
         // Change Quantity
-        $('.item-quantity').keypress(function(e) {
+        $('.update').click(function(e) {
             let form = $(this).prev('.change-quantity');
             form.submit();
         })

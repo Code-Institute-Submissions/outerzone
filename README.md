@@ -151,7 +151,7 @@ django-countries
 * Products - Get filter by Artist to work.
 * Products - use for statement to run through filter artists
 * Products - fix margins and positioning of basket
-* Basket - fix update quantity and delete
+* Basket - fix update quantity 
 * Change btn hover background-color to wine/turquoise?
 * Checkout - move complete order btn to right
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
@@ -163,6 +163,7 @@ django-countries
 * Home - center container on small screens
 * Products - Fix sort by name.
 * Checkout - grand total not pulling through to admin?
+* Basket - fix delete
 
 # Project Requirements
 ## Main Technologies
