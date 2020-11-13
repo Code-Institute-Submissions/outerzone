@@ -143,6 +143,15 @@ django-countries
 
 
 **** MY NOTES ONLY - NOT PART OF FINAL README ****
+
+Jonathan 12.11.2020
+Checkout
+* Order and OrderLineItem. Don't save to the database. Write line total as property on the model.
+* Reading to do, Jonathan sent on Slack
+* More comments on webhooks. URLs to Stripe documentation. Particularly on the delay on checkout 
+* SQLite committed to repo. Add to gitignore, but only later when close to end.
+* SECRET_KEY and DEBUG variables 
+
 # Questions
 * Where do I store JSON if data needs to be accessed in multiple apps?
 # To Do
@@ -151,19 +160,19 @@ django-countries
 * Products - Get filter by Artist to work.
 * Products - use for statement to run through filter artists
 * Products - fix margins and positioning of basket
-* Basket - fix update quantity 
 * Change btn hover background-color to wine/turquoise?
-* Checkout - move complete order btn to right
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
 
 # Done 
-* Products - search bar not working
 * Home - center container on small screens
+* Products - search bar not working
 * Products - Fix sort by name.
-* Checkout - grand total not pulling through to admin?
 * Basket - fix delete
+* Basket - fix update quantity
+* Checkout - grand total not pulling through to admin?
+* Checkout - move complete order btn to right
 
 # Project Requirements
 ## Main Technologies

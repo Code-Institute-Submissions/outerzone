@@ -68,6 +68,15 @@
     </header>
 {% if messages %} 
 	<div class="message-container">
+    {% for message in messages %}
+        {% with message.level as level %}
+            {% if level == 40 %}
+            {% elif level == 30 %}
+            {% elif level == 40 %}
+            {% else %}
+            {% endif %}
+        {% endwith %}
+    {% endfor %}
     </div>
 {% endif %}
 
