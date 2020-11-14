@@ -112,3 +112,17 @@ i {
     color: #ffffff;
     border-radius: 0;
 }
+
+/*--Allauth--*/
+
+.allauth-inner-content input {
+    border-radius: 0;
+}
+
+.allauth-inner-content h1 {
+    margin-bottom: 2rem;
+}
+
+.allauth-inner-content label:not([for='id_remember']) {
+    display: none;
+}

@@ -164,6 +164,7 @@ Checkout
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
+* Checkout - amend styling of country input
 
 # Done 
 * Home - center container on small screens
