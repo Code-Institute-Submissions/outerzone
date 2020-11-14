@@ -115,8 +115,10 @@ i {
 
 /*--Allauth--*/
 
+.profile-form,
 .allauth-inner-content input {
     border-radius: 0;
+    color: #8a8a8a;
 }
 
 .allauth-inner-content h1 {
