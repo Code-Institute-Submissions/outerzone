@@ -6,3 +6,5 @@ Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
 Cost: {{ order.grand_total }}
 Delivery Address: {{ order.street_address1 }}, {{ order.town_or_city }} {{ order.postcode }}
+
+Question? Get in touch with us at {{ contact_email }}
