@@ -32,16 +32,24 @@
     <div class="row">
     {% for product in products %}
         <div class="col-xs-12 col-sm-6 col-lg-3">
-            <a href="{% url 'product_detail' product.id %}">
-                <div class="card product-card p-4 mt-4">
-                    <img class="card-img-top" src="/media/{{ product.image }}" alt="Card image cap">
+            <div class="card product-card p-4 mt-4">
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top" src="/media/{{ product.image }}" alt="{{ product.name }} by {{ product.artist }}">
                     <div class="pt-4 heading-font">
                         <h3>{{ product.name }}</h3>
                         <h5>{{ product.artist }}</h5>
                         <h4>£{{ product.price }}</h4>
                     </div>
+                </a>
+            {% if request.user.is_superuser %}
+                <div class="mt-4 row">
+                    <div class="col-auto">
+                        <a class="mr-2 small" href="{% url 'delete_product' product.id %}"><i class="fas fa-trash"></i></a>
+                        <a class="ml-2 small" href="{% url 'edit_product' product.id %}"><i class="fas fa-edit"></i></a>
+                    </div>
                 </div>
-            </a>
+            {% endif %}
+            </div>
         </div>
     {% endfor %}
     </div>

@@ -56,13 +56,13 @@ def product_detail(request, product_id):
 
 
 def add_product(request):
-    """ Add a product to the shop """
+    """ Superuser can add a product """
     if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, 'Product added')
-            return redirect(reverse('add_product'))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Product not yet added. Please check your form.')
     else:
@@ -75,7 +75,7 @@ def add_product(request):
     return render(request, template, context)
 
 def edit_product(request, product_id):
-    """ Edit a product """
+    """ Superuser can edit a product """
     product = get_object_or_404(Product, pk=product_id)
 
     if request.method == 'POST':
@@ -97,3 +97,10 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+def delete_product(request, product_id):
+    """ Superuser can delete product """
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product deleted')
+    return redirect(reverse('products'))
