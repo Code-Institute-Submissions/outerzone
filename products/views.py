@@ -59,7 +59,7 @@ def product_detail(request, product_id):
 @login_required
 def add_product(request):
     """ Superuser can add a product """
-    if no request.user.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'No access for non-admin users')
         return redirect(reverse('home'))
 
@@ -85,7 +85,7 @@ def edit_product(request, product_id):
     """ Superuser can edit a product """
     product = get_object_or_404(Product, pk=product_id)
 
-    if no request.user.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'No access for non-admin users')
         return redirect(reverse('home'))
 
@@ -114,7 +114,7 @@ def delete_product(request, product_id):
     """ Superuser can delete product """
     product = get_object_or_404(Product, pk=product_id)
 
-    if no request.user.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'No access for non-admin users')
         return redirect(reverse('home'))
 
