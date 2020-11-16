@@ -26,6 +26,14 @@
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
             </form>
+        {% if request.user.is_superuser %}
+            <div class="mt-4 row">
+                <div class="col-auto">
+                    <a class="mr-2 small" href="{% url 'delete_product' product.id %}"><i class="fas fa-trash"></i></a>
+                    <a class="ml-2 small" href="{% url 'edit_product' product.id %}"><i class="fas fa-edit"></i></a>
+                </div>
+            </div>
+        {% endif %}
         </div>
     </div>
 </div>
