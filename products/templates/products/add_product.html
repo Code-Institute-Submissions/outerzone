@@ -2,5 +2,21 @@
 {% load static %}
 
 {% block content %}
-Product Management
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 main-font mt-4">
+            <h2>Product Management</h2>
+            <form method="POST" action="{% url 'add_product' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-row justify-content-end">
+                    <div class="col-auto">
+                        <a class="btn secondary-btn" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn" type="submit">Add Product</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

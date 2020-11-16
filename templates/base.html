@@ -56,6 +56,9 @@
                     <a class="nav-item nav-link" href="{% url 'products' %}">Shop</a>
                     <a class="nav-item nav-link" href="#">Forum</a>
                 {% if request.user.is_authenticated %}   
+                    {% if request.user.is_superuser %}
+                    <a class="nav-item nav-link" href="{% url 'add_product' %}">Add Products</a>
+                    {% endif %}
                     <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
                     <a class="nav-item nav-link" href="{% url 'account_logout' %}">Logout</a>
                 {% else %}

@@ -115,6 +115,7 @@ i {
 
 /*--Allauth--*/
 
+.product-form,
 .profile-form,
 .allauth-inner-content input {
     border-radius: 0;
