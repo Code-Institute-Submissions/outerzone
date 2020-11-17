@@ -22,7 +22,7 @@
                     <tbody>
                     {% for item in basket_items %}
                         <tr>
-                            <td class="d-none d-sm-block"><img class="img-thumbnail basket-thumb" src="/media/{{ item.product.image }}" alt="{{ item.product.name }}"></td>
+                            <td class="d-none d-sm-block"><img class="img-thumbnail basket-thumb" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ item.product.name }}"></td>
                             <td>{{ item.product.name }}</td>
                             <td>£{{ item.product.price }}</td>
                             <td class="text-right" >{{ item.quantity }}</td>

@@ -21,7 +21,7 @@
                         <tr>
                             <td class="d-none d-sm-block">
                             {% if item.product.image %}
-                                <img class="img-thumbnail basket-thumb" src="/media/{{ item.product.image }}" alt="{{ item.product.name }}">
+                                <img class="img-thumbnail basket-thumb" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ item.product.name }}">
                             {% else %}
                                 <img class="img-thumbnail basket-thumb" src="{{ MEDIA_URL }}bwlogo.jpg" alt="Default Outer Zone image">
                             {% endif %}
