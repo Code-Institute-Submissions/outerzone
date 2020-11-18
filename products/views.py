@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product
+from .models import Product, Artist
 from .forms import ProductForm
 
 
@@ -12,6 +12,8 @@ from .forms import ProductForm
 def all_products(request):
     """ View returns all products """
     products = Product.objects.all()
+    artists = Artist.objects.all()
+    filterArtists = None
     query = None
     sort = None
     direction = None
@@ -29,6 +31,11 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
+        if 'artist' in request.GET:
+            filterArtists = request.GET['artist'].split(',')
+            products = products.filter(artist__name__in=filterArtists)
+            filterArtists = Artist.objects.filter(name__in=artists)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -42,7 +49,9 @@ def all_products(request):
 
     context = {
         'products': products,
+        'artists': artists,
         'search_term': query,
+        'current_artists': artists,
         'current_sorting': current_sorting,
     }
     return render(request, 'products/products.html', context)
@@ -55,6 +64,7 @@ def product_detail(request, product_id):
         'product': product,
     }
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
@@ -73,12 +83,14 @@ def add_product(request):
             messages.error(request, 'Product not yet added. Please check your form.')
     else:
         form=ProductForm()
+
     form = ProductForm()
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -108,6 +120,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):

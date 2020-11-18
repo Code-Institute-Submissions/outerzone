@@ -7,9 +7,9 @@
 
 .main-font {
     font-family: 'Oswald', sans-serif;
-    background: #000000;
+    background: #0E0E0E;
     color: #ffffff;
-    padding: 1rem;
+    padding: 2rem 5rem;
 }
 
 /*--Background--*/
@@ -39,7 +39,7 @@ a:hover {
 
 .btn {
     background: #ffffff;
-    color: #000000;
+    color: #0E0E0E;
     border-radius: 0;
 }
 
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .navbar {
-    background: #000000;
+    background: #0E0E0E;
     color: #ffffff;
 }
 
@@ -104,11 +104,31 @@ i {
     padding-top: 2rem;
 }
 
+/* Home */
+
+.home-background-photo {
+    background-image: url('https://djmag.com/sites/default/files/storyimages/475/SJH_6058_copy.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+.wardy-dom-photo {
+    background-image: url('https://images.theskinny.co.uk/assets/production/41615/41615_widescreen.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 75%;
+    background-size: cover;
+    padding: 0;
+}
+
 /*--Products--*/
 
 .product-card,
 .card-img-top {
-    background-color: #000000;
+    background-color: #0E0E0E;
     color: #ffffff;
     border-radius: 0;
 }

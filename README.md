@@ -156,8 +156,6 @@ Checkout
 * Where do I store JSON if data needs to be accessed in multiple apps?
 # To Do
 * Change navbar font to white, whilst still being able to see burger.
-* Get MEDIA_URL to work on html (nav logo and product images)
-* Products - Get filter by Artist to work.
 * Products - use for statement to run through filter artists
 * Products - fix margins and positioning of basket
 * Change btn hover background-color to wine/turquoise?
@@ -167,9 +165,11 @@ Checkout
 * Checkout - amend styling of country input
 
 # Done 
+* Get MEDIA_URL to work on html (nav logo and product images)
 * Home - center container on small screens
 * Products - search bar not working
 * Products - Fix sort by name.
+* Products - Get filter by Artist to work.
 * Basket - fix delete
 * Basket - fix update quantity
 * Checkout - grand total not pulling through to admin?

@@ -1,6 +1,7 @@
 from django import forms
 from .models import Order
 
+
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
@@ -10,13 +11,13 @@ class OrderForm(forms.ModelForm):
         """ Add placeholders and classes, remove auto-generated labels and set autofocus on first field """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'full_name': 'Full Name', 
-            'email': 'Email Adress', 
-            'phone_number': 'Phone Number', 
-            'street_address1': 'Postal Address 1', 
-            'street_address2': 'Postal Address 2', 
-            'town_or_city': 'Town or City', 
-            'postcode': 'Postcode', 
+            'full_name': 'Full Name',
+            'email': 'Email Adress',
+            'phone_number': 'Phone Number',
+            'street_address1': 'Postal Address 1',
+            'street_address2': 'Postal Address 2',
+            'town_or_city': 'Town or City',
+            'postcode': 'Postcode',
             'county': 'County',
         }
 

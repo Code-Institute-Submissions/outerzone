@@ -4,7 +4,7 @@
         "model": "products.product",
         "fields": {
             "name": "Triple M EP",
-            "artist": "Modus",
+            "artist": 1,
             "price": 8.99,
             "image": "triplem.jpg"
         }
@@ -14,7 +14,7 @@
         "model": "products.product",
         "fields": {
             "name": "Triple M EP (Part Two)",
-            "artist": "Modus",
+            "artist": 1,
             "price": 9.99,
             "image": "triplem2.jpg"
         }
@@ -24,7 +24,7 @@
         "model": "products.product",
         "fields": {
             "name": "Mario",
-            "artist": "Solid Blake",
+            "artist": 2,
             "price": 8.99,
             "image": "mario.jpg"
         }
@@ -34,7 +34,7 @@
         "model": "products.product",
         "fields": {
             "name": "Plastic Entertainment",
-            "artist": "Alfie",
+            "artist": 3,
             "price": 7.99,
             "image": "plasticentertainment.jpg"
         }
