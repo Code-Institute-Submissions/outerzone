@@ -1,0 +1,9 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block content %}
+<form method="POST">
+    {% csrf token %}
+    {% crispy|form %}
+</form>
+{% endblock %}
