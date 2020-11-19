@@ -156,7 +156,6 @@ Checkout
 * Where do I store JSON if data needs to be accessed in multiple apps?
 # To Do
 * Change navbar font to white, whilst still being able to see burger.
-* Products - use for statement to run through filter artists
 * Products - fix margins and positioning of basket
 * Change btn hover background-color to wine/turquoise?
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
@@ -170,6 +169,7 @@ Checkout
 * Products - search bar not working
 * Products - Fix sort by name.
 * Products - Get filter by Artist to work.
+* Products - use for statement to run through filter artists
 * Basket - fix delete
 * Basket - fix update quantity
 * Checkout - grand total not pulling through to admin?
