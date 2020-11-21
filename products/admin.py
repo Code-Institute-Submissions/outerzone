@@ -12,6 +12,13 @@ class ProductAdmin(admin.ModelAdmin):
     )
     ordering = ('artist',)
 
+class ArtistAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'description',
+        'image',
+    )
+    ordering = ('name',)
 
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Artist)
+admin.site.register(Artist, ArtistAdmin)
