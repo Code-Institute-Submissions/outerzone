@@ -104,25 +104,7 @@ i {
     padding-top: 2rem;
 }
 
-/* Home */
 
-.home-background-photo {
-    background-image: url('https://djmag.com/sites/default/files/storyimages/475/SJH_6058_copy.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    padding: 0;
-}
-
-.wardy-dom-photo {
-    background-image: url('https://images.theskinny.co.uk/assets/production/41615/41615_widescreen.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 75%;
-    background-size: cover;
-    padding: 0;
-}
 
 /*--Products--*/
 

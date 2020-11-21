@@ -163,6 +163,9 @@ Checkout
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
+* Home - fix layout of photos
+* Mini Checkout - amend layout
+* Messages - add messages 
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -174,6 +177,7 @@ Checkout
 * Basket - fix update quantity
 * Checkout - grand total not pulling through to admin?
 * Checkout - move complete order btn to right
+* Comments - add comments to show code borrowed from elsewhere
 
 # Project Requirements
 ## Main Technologies

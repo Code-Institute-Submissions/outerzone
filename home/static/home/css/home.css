@@ -1,0 +1,34 @@
+/* Home */
+
+.home-background-photo {
+    background-image: url('https://djmag.com/sites/default/files/storyimages/475/SJH_6058_copy.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+
+.outer-zone-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ward-dom-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.wardy-dom-photo {
+    background-image: url('https://images.theskinny.co.uk/assets/production/41615/41615_widescreen.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    padding-top: 145px;
+}
