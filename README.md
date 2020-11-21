@@ -155,16 +155,18 @@ Checkout
 # Questions
 * Where do I store JSON if data needs to be accessed in multiple apps?
 # To Do
-* Change navbar font to white, whilst still being able to see burger.
-* Products - use for statement to run through filter artists
-* Products - fix margins and positioning of basket
 * Change btn hover background-color to wine/turquoise?
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
-* Mini Checkout - amend layout
-* Messages - add messages 
+* Messages - add messages
+* Artists - add artists page
+* Events - add events section and model 
+* Fix padding and text size for smaller screens 
+* Login - add styling for anchors
+* Why is there overflow on smaller screens?
+
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -172,12 +174,16 @@ Checkout
 * Home - fix layout of photos
 * Products - search bar not working
 * Products - Fix sort by name.
-* Products - Get filter by Artist to work.
+* Products - Get filter by Artist to work
+* Products - use for statement to run through filter artists
+* Products - fix margins and positioning of basket
 * Basket - fix delete
 * Basket - fix update quantity
 * Checkout - grand total not pulling through to admin?
 * Checkout - move complete order btn to right
 * Comments - add comments to show code borrowed from elsewhere
+* Mini Checkout - amend layout
+* Change navbar font to white, whilst still being able to see burger.
 
 # Project Requirements
 ## Main Technologies

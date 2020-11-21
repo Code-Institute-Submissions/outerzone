@@ -9,7 +9,7 @@
     font-family: 'Oswald', sans-serif;
     background: #0E0E0E;
     color: #ffffff;
-    padding: 2rem 5rem;
+    padding: 2rem;
 }
 
 /*--Background--*/
@@ -24,6 +24,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /*--Links--*/
