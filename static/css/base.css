@@ -20,6 +20,7 @@
 
 body {
     background-image: url('/media/ozbackground.png');
+    repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 0;
@@ -27,9 +28,16 @@ body {
 
 /*--Links--*/
 
+/* needed to overwrite Bootstrap styling */
 a,
-.navbar-toggler-icon {
-    color: #ffffff;
+.navbar-toggler-icon,
+.navbar-dark,
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    color: #ffffff!important;
+    border-color: #ffffff!important;
+    border-radius: 0;
 }
 
 a:hover {
@@ -84,8 +92,18 @@ i {
     padding: 1rem;
 }
 
-.mini-basket {
+.head-icon-links {
     font-size: 1.7em;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.head-icon-links:first-child {
+    padding-left: 0;
+}
+
+.head-icon-links:last-child {
+    padding-right: 0;
 }
 
 /*--Images--*/

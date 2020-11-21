@@ -4,7 +4,7 @@
 
 .form-control {
     border-radius: 0;
-    width: 75%;
+    width: calc(100% - 61px);
     border: none;
     display: inline-block;
     margin-right: 0;

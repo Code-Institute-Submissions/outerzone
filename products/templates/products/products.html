@@ -6,13 +6,13 @@
 {% endblock %}
 
 {% block extra_nav_content %}
-    <div class="col-12 col-sm-6 col-md-4">
+    <div class="col-12 col-sm-6 col-md-4 align-self-center">
         <form class="search-form" method="GET" action="{% url 'products' %}">
                 <input class="form-control search-input" type="text" aria-label="Search" name="q">
                 <input class="search-btn btn" type="submit" value="Search">    
         </form>
     </div>
-    <div class="col-12 col-sm-6 col-md-5">
+    <div class="col-12 col-sm-6 col-md-4 align-self-center">
         <div class="mr-2 dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownArtist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Filter by Artist
