@@ -13,14 +13,14 @@
 .outer-zone-text {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 20%;
 }
 
-.ward-dom-text {
+.artists-text {
     position: absolute;
-    left: 0;
     bottom: 0;
-    padding: 2rem;
+    left: 0;
+    width: 100%;
 }
 
 .wardy-dom-photo {
@@ -31,6 +31,13 @@
     background-size: cover;
     padding: 0;
     padding-top: 145px;
+    position: relative;
+}
+
+.ward-dom-text {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 
