@@ -46,7 +46,7 @@
     <header class="container-fluid heading-font px-0">
         <nav class="navbar navbar-dark navbar-expand-lg px-auto">
             <a class="navbar-brand" href="{% url 'home' %}"><img src="{{ MEDIA_URL }}bwlogo.jpg" alt="Outer Zone Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -67,8 +67,14 @@
                 {% endif %} 
                 </div>
             </div>
-            {% include 'includes/mini_basket.html' %}
         </nav>
+        <div class="row basket-row justify-content-end">
+            {% block extra_nav_content %}
+            {% endblock %}
+            <div class="col-3">
+                {% include 'includes/mini_basket.html' %}
+            </div>
+        </div>
     </header>
 {% if messages %} 
 	<div class="message-container">

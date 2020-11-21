@@ -78,6 +78,12 @@ i {
     color: #ffffff;
 }
 
+.basket-row {
+    background-color: #0E0E0E;
+    color: #ffffff;
+    padding: 1rem;
+}
+
 .mini-basket {
     font-size: 1.7em;
 }
@@ -103,7 +109,6 @@ i {
     border-top: #ffffff 2px solid;
     padding-top: 2rem;
 }
-
 
 
 /*--Products--*/

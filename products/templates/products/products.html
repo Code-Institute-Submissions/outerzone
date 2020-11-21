@@ -1,13 +1,18 @@
 {% extends "base.html" %} 
 {% load static %} 
 
-{% block content %}
-<div class="container-fluid">
-    <div class="row main-font d-flex align-items-center">
-        <form class="mr-4 form-inline" method="GET" action="{% url 'products' %}">
-            <input class="form-control inline" type="text" aria-label="Search" name="q">
-            <input class="ml-2 btn" type="submit" value="Search">    
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
+{% block extra_nav_content %}
+    <div class="col-12">
+        <form class="search-form" method="GET" action="{% url 'products' %}">
+                <input class="form-control search-input" type="text" aria-label="Search" name="q">
+                <input class="search-btn btn" type="submit" value="Search">    
         </form>
+    </div>
+    <div class="col-12">
         <div class="mr-2 dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownArtist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Filter by Artist
@@ -31,6 +36,12 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- <div class="row main-font d-flex align-items-center"> -->
+    <!-- </div> -->
     <div class="row">
     {% for product in products %}
         <div class="col-xs-12 col-sm-6 col-lg-3">

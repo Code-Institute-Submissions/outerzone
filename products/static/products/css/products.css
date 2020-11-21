@@ -1,0 +1,22 @@
+.search-form {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border-radius: 0;
+    width: 75%;
+    border: none;
+    display: inline-block;
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+.search-btn {
+    margin-left: 0;
+}
+
+.dropdown {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+

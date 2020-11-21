@@ -163,13 +163,13 @@ Checkout
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
-* Home - fix layout of photos
 * Mini Checkout - amend layout
 * Messages - add messages 
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
 * Home - center container on small screens
+* Home - fix layout of photos
 * Products - search bar not working
 * Products - Fix sort by name.
 * Products - Get filter by Artist to work.
