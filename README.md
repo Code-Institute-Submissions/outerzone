@@ -166,6 +166,7 @@ Checkout
 * Fix padding and text size for smaller screens 
 * Login - add styling for anchors
 * Why is there overflow on smaller screens?
+* Change photos for smaller screens
 
 
 # Done 
