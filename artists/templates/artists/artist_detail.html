@@ -2,7 +2,7 @@
 {% load static %} 
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+    <link rel="stylesheet" href="{% static 'artists/css/artists.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -10,7 +10,7 @@
     <div class="row allauth-inner-content">
         <div class="col-12 col-md-8 main-font mt-4">
             <h1 class="heading-font">{{ artist.name }}</h1>
-            Hello
+            <img class="artist-image" src="{{ MEDIA_URL }}{{ artist.image }}" alt="{{ artist.name }}">
         </div>
     </div>
 </div>
