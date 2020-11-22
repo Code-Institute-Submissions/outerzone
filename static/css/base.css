@@ -9,7 +9,11 @@
     font-family: 'Oswald', sans-serif;
     background: #0E0E0E;
     color: #ffffff;
-    padding: 2rem;
+    padding: 2.5rem;
+}
+
+p {
+    font-size: 4vw;
 }
 
 /*--Background--*/
@@ -30,7 +34,7 @@ body {
 /*--Links--*/
 
 /* needed to overwrite Bootstrap styling */
-a,
+
 .navbar-toggler-icon,
 .navbar-dark,
 .navbar-toggler,
@@ -41,9 +45,17 @@ a,
     border-radius: 0;
 }
 
+a {
+    color: #ffffff;
+}
+
 a:hover {
     color: #8a8a8a;
     text-decoration: none;
+}
+
+.color-anchor {
+    color: #02B4D7;
 }
 
 .btn {

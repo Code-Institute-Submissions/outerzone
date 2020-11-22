@@ -152,8 +152,6 @@ Checkout
 * SQLite committed to repo. Add to gitignore, but only later when close to end.
 * SECRET_KEY and DEBUG variables 
 
-# Questions
-* Where do I store JSON if data needs to be accessed in multiple apps?
 # To Do
 * Change btn hover background-color to wine/turquoise?
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
@@ -164,10 +162,7 @@ Checkout
 * Artists - add artists page
 * Events - add events section and model 
 * Fix padding and text size for smaller screens 
-* Login - add styling for anchors
-* Why is there overflow on smaller screens?
 * Change photos for smaller screens
-
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -185,6 +180,10 @@ Checkout
 * Comments - add comments to show code borrowed from elsewhere
 * Mini Checkout - amend layout
 * Change navbar font to white, whilst still being able to see burger.
+* Why is there overflow on smaller screens?
+* Where do I store JSON if data needs to be accessed in multiple apps?
+* Login - add styling for anchors
+* Buttons - why is btn writing white?
 
 # Project Requirements
 ## Main Technologies
