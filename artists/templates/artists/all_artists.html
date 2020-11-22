@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row allauth-inner-content">
+        <div class="col-12 col-md-8 main-font mt-4">
+            <h1 class="heading-font">Artists</h1>
+            {% for artist in artists %}
+                <a href="{% url 'artist_detail' artist.id %}">   
+                    <div class="row mt-3">
+                        <div class="col-6"><img class="img-thumbnail" src="{{ MEDIA_URL }}{{ artist.image }}" alt="{{ artist.name }}"></div>
+                        <div class="col-6">
+                            <h2 class="heading-font">{{ artist.name}}</h2>
+                            <p>{{ artist.description }}</p>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

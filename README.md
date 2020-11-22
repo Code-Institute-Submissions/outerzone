@@ -161,8 +161,8 @@ Checkout
 * Messages - add messages
 * Artists - add artists page
 * Events - add events section and model 
-* Fix padding and text size for smaller screens 
 * Change photos for smaller screens
+* Fonts - vh for headings
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -184,6 +184,7 @@ Checkout
 * Where do I store JSON if data needs to be accessed in multiple apps?
 * Login - add styling for anchors
 * Buttons - why is btn writing white?
+* Fix padding and text size for smaller screens 
 
 # Project Requirements
 ## Main Technologies
