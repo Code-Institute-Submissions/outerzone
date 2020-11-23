@@ -4,7 +4,8 @@ from django.contrib.auth.decorators import login_required
 
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Artist
+from .models import Product
+from artists.models import Artist
 from .forms import ProductForm
 
 

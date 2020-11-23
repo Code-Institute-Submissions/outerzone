@@ -1,3 +1,13 @@
+.image-container {
+    max-height: 30rem;
+    overflow-y: hidden;
+    margin-bottom: 2rem;
+}
+
 .artist-image {
     width: 100%;
+}
+
+.record-image {
+    margin-bottom: 2rem;
 }

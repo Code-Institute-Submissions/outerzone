@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from products.models import Artist
+from artists.models import Artist
 
 # Create your views here.
 def index(request):

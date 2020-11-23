@@ -159,7 +159,7 @@ Checkout
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
 * Messages - add messages
-* Artists - add artists page
+* Artist - Get records to show on page
 * Events - add events section and model 
 * Change photos for smaller screens
 * Fonts - vh for headings
@@ -168,6 +168,7 @@ Checkout
 * Get MEDIA_URL to work on html (nav logo and product images)
 * Home - center container on small screens
 * Home - fix layout of photos
+* Artists - add artists page
 * Products - search bar not working
 * Products - Fix sort by name.
 * Products - Get filter by Artist to work
