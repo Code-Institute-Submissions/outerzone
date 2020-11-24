@@ -153,16 +153,17 @@ Checkout
 * SECRET_KEY and DEBUG variables 
 
 # To Do
+* How do I delete the artists model from products?
 * Change btn hover background-color to wine/turquoise?
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
 * Messages - add messages
-* Artist - Get records to show on page
-* Events - add events section and model 
+* Events - add events html
 * Change photos for smaller screens
 * Fonts - vh for headings
+* Home - turn arrows into buttons
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -180,6 +181,8 @@ Checkout
 * Checkout - move complete order btn to right
 * Comments - add comments to show code borrowed from elsewhere
 * Mini Checkout - amend layout
+* Artist - Get records to show on page
+* Events - add model 
 * Change navbar font to white, whilst still being able to see burger.
 * Why is there overflow on smaller screens?
 * Where do I store JSON if data needs to be accessed in multiple apps?
