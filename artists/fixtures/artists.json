@@ -4,7 +4,7 @@
         "model": "artists.artist",
         "fields": {
             "name": "modus",
-            "description": "",
+            "description": "New act and longtime friend, Modus (aka Dominic Meade) draws on years of experience in the techno scenes of Glasgow and Edinburgh. His music takes inspiration from an era of techno that's held dearer than any other in Glasgow whilst retaining a style Dom's carved out for himself in the studio, through his years DJing with us and as a resident at Edinburgh's seminal techno party, Substance.",
             "image": "modussquirrel.jpg",
             "discogs": "https://www.discogs.com/artist/6983912-Modus-15",
             "soundcloud": "https://soundcloud.com/modus_gla"
