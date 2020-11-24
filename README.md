@@ -154,15 +154,12 @@ Checkout
 
 # To Do
 * How do I delete the artists model from products?
-* Change btn hover background-color to wine/turquoise?
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
 * Messages - add messages
-* Events - add events html
 * Change photos for smaller screens
-* Fonts - vh for headings
 * Home - turn arrows into buttons
 
 # Done 
@@ -170,6 +167,7 @@ Checkout
 * Home - center container on small screens
 * Home - fix layout of photos
 * Artists - add artists page
+* Events - add events html
 * Products - search bar not working
 * Products - Fix sort by name.
 * Products - Get filter by Artist to work
@@ -189,6 +187,7 @@ Checkout
 * Login - add styling for anchors
 * Buttons - why is btn writing white?
 * Fix padding and text size for smaller screens 
+* Fonts - vh for headings
 
 # Project Requirements
 ## Main Technologies

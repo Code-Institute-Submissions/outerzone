@@ -40,6 +40,10 @@
     top: 0;
 }
 
+.chevron {
+    float: right;
+}
+
 @media only screen and (min-width: 768px) {
     
     .wardy-dom-photo {
