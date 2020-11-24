@@ -160,12 +160,12 @@ Checkout
 * Checkout - amend styling of country input
 * Messages - add messages
 * Change photos for smaller screens
-* Home - turn arrows into buttons
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
 * Home - center container on small screens
 * Home - fix layout of photos
+* Home - turn arrows into buttons
 * Artists - add artists page
 * Events - add events html
 * Products - search bar not working

@@ -5,14 +5,14 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-8 main-font mt-4">
-            <h2>Add Product</h2>
-            <form method="POST" action="{% url 'add_product' %}" enctype="multipart/form-data">
+            <h2>Add Artist</h2>
+            <form method="POST" action="{% url 'add_artist' %}" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ productForm|crispy }}
+                {{ form|crispy }}
                 <div class="form-row justify-content-end">
                     <div class="col-auto">
                         <a class="btn secondary-btn" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn" type="submit">Add Product</button>
+                        <button class="btn" type="submit">Add Artist</button>
                     </div>
                 </div>
             </form>
