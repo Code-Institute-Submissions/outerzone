@@ -88,6 +88,17 @@ Users visit the website because they want:
 15. As admin for the site, I want to be able to edit and delete artist details on the site.
 
 ### Wireframes
+
+#### Member Journey
+##### Small Screens
+<img src="media/wireframes/small.png" style="center" alt="Wireframe for small screen">
+
+##### Medium Screens
+<img src="media/wireframes/medium.png" style="center" alt="Wireframe for small screen">
+
+##### Large Screens
+<img src="media/wireframes/large.png" style="center" alt="Wireframe for small screen">
+
 ---
 ## Design
 ---
@@ -109,6 +120,10 @@ Users visit the website because they want:
 ### Features to be implemented
 ---
 ## Database 
+
+An SQL database was used for this project. The structure of the relationships between the models are outlined in the diagram below.
+
+<img src="media/ms4_data.png" style="center" alt="Data relationships">
 ---
 ## Technologies
 ---
@@ -120,6 +135,21 @@ Users visit the website because they want:
 ### Problem Solving
 ---
 ## Deployment 
+
+### Locally
+
+To run this project locally from your own computer, you must first have an IDE installed, as well as PIP, Python3 and Git.
+You should also set up an online account with [Stripe](https://stripe.com/en-gb).
+
+1. Go to the [GitHub page](https://github.com/H4RP3RK/outerzone) for the Outer Zone project, click the 'code' button and download the zip file.
+Using Git, the repo can be cloned by typing the following command into your terminal:
+```
+git clone https://github/H4RP3RK/outerzone
+```
+2. The repository should now be saved locally, so you can open the folder through your IDE.
+3. Install all the required modules for the project, as outlined in the requirements.txt file.
+4. Set up your environment variables
+
 
 pip3 install:
 django
