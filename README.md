@@ -40,8 +40,8 @@
 ---
 ## Introduction
 A website for record label, Outer Zone, in order to showcases the label's artists and build a community of fans.
-Users are able to find out more about the artists, their releases and upcoming gigs. Those who register can buy 
-records and merchandise, rate their purchases and speak with fellow fans through the Outer Zone Forum.
+Users are able to find out more about the artists, their releases and upcoming gigs. All users are able to purchase products and, those 
+who register with the site can save their delivery details for later purchases and see a record of previous orders.
 
 ---
 ## User Experience
@@ -53,9 +53,8 @@ and [Bandcamp](https://outerzone.bandcamp.com/).
 
 The client requested this website in order to:
 * increase the profile of the record label.
-* showcase the label's artists, their releases, upcoming gigs and media attention.
+* showcase the label's artists, their releases and upcoming gigs.
 * provide a one-stop shop for users to find out more about the label and buy their records.
-* create a community where electronic music fans can speak with like-minded people.
 * allow others within the industry, such as distributors, gig promoters or journalists, to easily get in touch with the label.
 
 ### Target Audience
@@ -69,23 +68,24 @@ The target audience are:
 Users visit the website because they want:
 * to find out more about the label and their artists.
 * to buy a record or other merchandise.
-* to review a record they recently bought.
-* a way to connect with an online electronic music community.
-* details on upcoming gigs.
+* details on upcoming events.
 
 ### User Stories
-1. As a new visitor, I want to find out more about Outer Zone and their artists.
-2. As a new visitor, I want to browse Outer Zone's releases and merchandise.
-3. As a new visitor, I want to register an account so I can connect with others in the Outer Zone forum.
-4. As a registered user, I want to purchase a record and other merchandise.
-5. As a registered user, I want to update my account details, payment details and avatar.
-6. As a registered user, I want to get involved in discussion on the online forum.
-7. As a registered user, I want to edit and delete my posts.
-8. As a registered user, I want to rate and review my purchases.
-9. As someone within the electronic music industry, I want to understand more about Outer Zone and the types of sets their artists play.
-10. As someone within the electronic music industry, I want to contact Outer Zone in order to work with them.
-11. As admin for the site, I want to be able to moderate the forum and delete posts, where necessary.
-12. As admin for the site, I want to be able to view all user accounts and their purchases.
+1. As a new visitor, I want an introduction to the Outer Zone label and their artists.
+2. As a new visitor, I want to browse Outer Zone's releases.
+3. As a user of the site, I want to sample the artists' music before I decide to buy.
+4. As a user of the site, I want to know about artists' upcoming events.
+5. As a user of the site, I want to purchase records.
+6. As a user of the site, I want to register for an account.
+7. As a registered user, I want to save my delivery details for future purchases.
+8. As a registered user, I want to update my delivery details.
+9. As a registered user, I want to see a record of my previous purchases.
+10. As someone within the electronic music industry, I want to understand more about Outer Zone and the types of sets their artists play.
+11. As someone within the electronic music industry, I want to contact Outer Zone in order to work with them.
+12. As admin for the site, I want to be able to add products to the site.
+13. As admin for the site, I want to be able to edit and delete products on the site.
+14. As admin for the site, I want to be able to add artists to the site.
+15. As admin for the site, I want to be able to edit and delete artist details on the site.
 
 ### Wireframes
 ---
