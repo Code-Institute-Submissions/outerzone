@@ -148,7 +148,53 @@ git clone https://github/H4RP3RK/outerzone
 ```
 2. The repository should now be saved locally, so you can open the folder through your IDE.
 3. Install all the required modules for the project, as outlined in the requirements.txt file.
-4. Set up your environment variables
+4. Set up your environment variables for the following:
+    * "DEVELOPMENT": true
+    * "SECRET_KEY"
+    * "STRIPE_PUBLIC_KEY"
+    * "STRIPE_SECRET_KEY"
+    * "STRIPE_WH_SECRET"
+5. Migrate the models to create the database by using the commands:
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+6. Create a superuser account in order to access the database through admin by typing the command:
+```
+python3 manage.py createsuperuser
+```
+7. Run the program locally by using the command:
+```
+python3 manage.py runserver
+```
+8. Add '/admin' to the URL for the locally created website in order to access the admin database. You'll be asked to type in the username and password you created for your superuser account.
+9. From the admin database, you'll be able to add items in each of the models. Add products and artists to get the website up and running.
+
+### Heroku
+
+1. Make sure that there is a requirements.txt file. If not, create one using the command:
+```
+pip3 freeze > requirements.txt
+```
+2. Create a Procfile by using the command:
+```
+echo web: python3 app.py > Procfile
+```
+3. Push the new requirements.txt and Procfile to GitHub using the commands:
+```
+git add .
+git commit "<message>"
+git push
+```
+4. Go to the [Heroku website](www.heroku.com). If you don't already have an account, create one, then log in.
+5. Create a new app for the project. You can do this by clicking on the new button at the top left of the screen, then choose "create new app" from the dropdown.
+6. You'll be prompted to give the app a unique name and choose the region most appropriate for your location.
+7. Go to settings > reveal config vars and set the following variables:
+    * "SECRET_KEY"
+    * "STRIPE_PUBLIC_KEY"
+    * "STRIPE_SECRET_KEY"
+    * "STRIPE_WH_SECRET"
+
 
 
 pip3 install:
