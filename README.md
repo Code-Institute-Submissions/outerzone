@@ -128,6 +128,13 @@ An SQL database was used for this project. The structure of the relationships be
 ## Technologies
 ---
 ## Testing 
+
+pip3 install coverage
+coverage run --source-artists manage.py test
+coverage report
+coverage html
+python3 -m http.server
+
 ### Tools 
 ### Automated Testing
 ### User Testing
