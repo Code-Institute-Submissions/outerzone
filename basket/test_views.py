@@ -1,4 +1,4 @@
-from django.test import TestCase
+from django.test import TestCase, Client
 from django.urls import reverse
 from products.models import Product
 from . import views
@@ -13,7 +13,5 @@ class TestViews(TestCase):
     
     # def test_add_to_basket(self):
     #     product = Product.objects.create(name='Test Product', pk=1, price='20')
-    #     session = self.client.session
-    #     basket = session['basket']
-    #     basket += product
-    #     self.assertEqual(session['basket'], {'product': 1, 'quantity': 1, 'price': '20'})
+    #     response = self.client.post('/basket/', {'quantity': 5})
+    #     self.assertEqual('basket', {'product': 1, 'quantity': 5, 'price': '20'})
