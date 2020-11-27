@@ -213,6 +213,7 @@ Pillow
 django-countries
 dj_database_url
 psycopg2-binary
+gunicorn
 
 ---
 ## Credits 
