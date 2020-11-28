@@ -5,10 +5,10 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-8 main-font mt-4">
-            <h2>Product Management</h2>
+            <h2>Add Product</h2>
             <form method="POST" action="{% url 'add_product' %}" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form|crispy }}
+                {{ productForm|crispy }}
                 <div class="form-row justify-content-end">
                     <div class="col-auto">
                         <a class="btn secondary-btn" href="{% url 'products' %}">Cancel</a>

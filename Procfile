@@ -1,0 +1,1 @@
+web: gunicorn outerzone.wsgi:application

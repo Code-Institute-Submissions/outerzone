@@ -1,0 +1,35 @@
+[
+    {
+        "pk": 1,
+        "model": "artists.event",
+        "fields": {
+            "artist": 1,
+            "name": "Clubnacht",
+            "description": "Join Modus, Dold and Deniro all night long",
+            "date": "2021-01-03 23:59",
+            "location": "Tresor, Berlin"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "artists.event",
+        "fields": {
+            "artist": 1,
+            "name": "Alien Communications Takeover",
+            "description": "Join Modus in Room 2 all night long",
+            "date": "2020-12-13 23:00",
+            "location": "Fabric, London"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "artists.event",
+        "fields": {
+            "artist": 2,
+            "name": "Outer Zone Launch Night",
+            "description": "Solid Blake plays all night long to promote the release of her new show",
+            "date": "2020-12-15 23:00",
+            "location": "La Cheetah, Glasgow"
+        }
+    }
+]

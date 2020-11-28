@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Product, Artist
+from .models import Product
+from artists.models import Artist
 
 
 # Register your models here.
@@ -12,13 +13,5 @@ class ProductAdmin(admin.ModelAdmin):
     )
     ordering = ('artist',)
 
-class ArtistAdmin(admin.ModelAdmin):
-    list_display = (
-        'name',
-        'description',
-        'image',
-    )
-    ordering = ('name',)
-
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Artist, ArtistAdmin)
+

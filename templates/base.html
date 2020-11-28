@@ -44,7 +44,7 @@
 
 <body>
     <header class="container-fluid heading-font px-0">
-        <nav class="navbar navbar-dark navbar-expand-lg px-auto">
+        <nav class="navbar navbar-dark navbar-expand-lg px-auto" id="nav">
             <a class="navbar-brand" href="{% url 'home' %}"><img src="{{ MEDIA_URL }}bwlogo.jpg" alt="Outer Zone Logo"></a>
             <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav text-right navbar-font-size">
                     <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
-                    <a class="nav-item nav-link" href="#">Artists</a>
+                    <a class="nav-item nav-link" href="{% url 'artists' %}">Artists</a>
                     <a class="nav-item nav-link" href="#">Forum</a>
                 {% if request.user.is_authenticated %}   
                     {% if request.user.is_superuser %}
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </nav>
-        <div class="row basket-row justify-content-end">
+        <div class="row basket-row justify-content-end no-gutters">
             {% block extra_nav_content %}
             {% endblock %}
             <div class="col-12 col-md-4 text-right align-self-center">

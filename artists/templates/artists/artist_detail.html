@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'artists/css/artists.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row allauth-inner-content">
+        <div class="col-12 col-md-8 main-font mt-4">
+            <h1 class="heading-font">{{ artist.name }}</h1>
+            <div class="image-container">
+                <img class="artist-image" src="{{ MEDIA_URL }}{{ artist.image }}" alt="{{ artist.name }}">
+            </div>
+            <p>{{ artist.description }}</p>
+        </div>
+        <div class="col-12 col-md-4 main-font mt-4">
+            <h2 class="heading-font">buy</h2>
+        {% for product in products %}
+            <a href="{% url 'product_detail' product.id %}">
+                <img class="img-thumbnail record-image" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}">
+            </a>
+        {% endfor %}
+        </div>
+        <div class="col-12 col-md-4 main-font mt-4">
+            <h2 class="heading-font">events</h2>
+        {% for event in events %}
+            <button class="accordion-button" id="event-accordion{{ event.id }}">
+                <h6 class="event-heading">{{ event.name }}</h6>
+                <p>{{ event.date }}</p>
+                <i class="fas fa-chevron-circle-down accordion-arrow"></i>
+            </button>
+            <div class="accordion-content">
+                <h5>{{ event.location }}</h5>
+                <p>{{ event.description }}</p>
+            </div>
+        {% endfor %}   
+        </div>
+        <div class="col-12 col-md-4 main-font mt-4">
+            <h2 class="heading-font">listen</h2>
+            <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1118155231&color=%2354646c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/modus_gla" title="Modus (Outer Zone / Sungate)" target="_blank" style="color: #cccccc; text-decoration: none;">Modus (Outer Zone / Sungate)</a>
+                <a href="https://soundcloud.com/modus_gla/sets/new-record-incominggggg" title="New record incominggggg" target="_blank" style="color: #cccccc; text-decoration: none;">New record incominggggg</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+    <script src="{% static 'artists/js/event_accordion.js' %}"></script>
+{% endblock %}

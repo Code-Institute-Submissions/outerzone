@@ -1,0 +1,35 @@
+[
+    {
+        "pk": 1,
+        "model": "artists.artist",
+        "fields": {
+            "name": "modus",
+            "description": "New act and longtime friend, Modus (aka Dominic Meade) draws on years of experience in the techno scenes of Glasgow and Edinburgh. His music takes inspiration from an era of techno that's held dearer than any other in Glasgow whilst retaining a style Dom's carved out for himself in the studio, through his years DJing with us and as a resident at Edinburgh's seminal techno party, Substance.",
+            "image": "modussquirrel.jpg",
+            "discogs": "https://www.discogs.com/artist/6983912-Modus-15",
+            "soundcloud": "https://soundcloud.com/modus_gla"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "artists.artist",
+        "fields": {
+            "name": "solid_blake",
+            "description": "Emma 'Solid Blake' Blake is a DJ and Producer who hails from Glasgow and now plays a prominent role in the bustling electronic music scene emerging from Copenhagen. Having cut her teeth working as a producer at Glasgow's highly influential student radio station Subcity Radio, since her move Blake has quietly built a glowing reputation among the underground techno community in Copenhagen as part of renowned DJ collective Apeiron Crew.",
+            "image": "solidblake.jpg",
+            "discogs": "https://www.discogs.com/artist/5489051-Solid-Blake",
+            "soundcloud": "https://soundcloud.com/solid_blake"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "artists.artist",
+        "fields": {
+            "name": "alfie",
+            "description": "Alfie aka The Burrell Connection",
+            "image": "alfie.jpg",
+            "discogs": "https://www.discogs.com/artist/4220588-The-Burrell-Connection",
+            "soundcloud": "https://soundcloud.com/theburrellconnection"
+        }
+    }
+]
