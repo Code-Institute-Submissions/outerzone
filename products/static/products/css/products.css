@@ -20,3 +20,10 @@
     display: inline-block;
 }
 
+.product-card,
+.card-img-top {
+    background-color: #0E0E0E;
+    color: #ffffff;
+    border-radius: 0;
+}
+

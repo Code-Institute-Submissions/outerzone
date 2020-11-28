@@ -1,6 +1,10 @@
 /*--Fonts--*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .heading-font {
     font-family: 'Teko', sans-serif;
 }
@@ -57,18 +61,6 @@ body {
 
 /*--Links--*/
 
-/* needed to overwrite Bootstrap styling */
-
-.navbar-toggler-icon,
-.navbar-dark,
-.navbar-toggler,
-.navbar-toggler:hover,
-.navbar-toggler:focus {
-    color: #ffffff!important;
-    border-color: #ffffff!important;
-    border-radius: 0;
-}
-
 i,
 a {
     color: #ffffff;
@@ -103,6 +95,18 @@ a:hover {
 
 /*--Nav Bar--*/
 
+/* needed to overwrite Bootstrap styling */
+
+.navbar-toggler-icon,
+.navbar-dark,
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    color: #ffffff!important;
+    border-color: #ffffff!important;
+    border-radius: 0;
+}
+
 .nav-item {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -121,12 +125,6 @@ a:hover {
     color: #ffffff;
 }
 
-.basket-row {
-    background-color: #0E0E0E;
-    color: #ffffff;
-    padding: 1rem;
-}
-
 .head-icon-links {
     font-size: 1.7em;
     display: inline-block;
@@ -141,14 +139,27 @@ a:hover {
     padding-right: 0;
 }
 
-/*--Images--*/
+/*-- Basket --*/
 
-.img-thumbnail {
-    border-radius: 0;
+.basket-row {
+    background-color: #0E0E0E;
+    color: #ffffff;
+    padding: 1rem;
 }
 
 .basket-thumb {
     width: 6em;
+}
+
+.basket-total h5 {
+    border-top: #ffffff 2px solid;
+    padding-top: 2rem;
+}
+
+/*--Images--*/
+
+.img-thumbnail {
+    border-radius: 0;
 }
 
 /*--Table--*/
@@ -157,35 +168,6 @@ a:hover {
 .table thead th {
     border: none;
 }
-
-.basket-total h5 {
-    border-top: #ffffff 2px solid;
-    padding-top: 2rem;
-}
-
-/*-- Messages --*/
-
-/* .message-container {
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    z-index: 99999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 1em;
-}
-
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow: auto;
-    background-color: black;
-} */
 
 /*-- Alerts --*/
 
@@ -205,16 +187,7 @@ a:hover {
     color: #ffffff;
 }
 
-/*--Products--*/
-
-.product-card,
-.card-img-top {
-    background-color: #0E0E0E;
-    color: #ffffff;
-    border-radius: 0;
-}
-
-/*--Allauth--*/
+/*--Allauth and Forms--*/
 
 .product-form,
 .profile-form,

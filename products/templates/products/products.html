@@ -7,7 +7,7 @@
 
 {% block extra_nav_content %}
     <div class="col-12 col-sm-6 col-md-4 align-self-center">
-        <form class="search-form" method="GET" action="{% url 'products' %}">
+        <form class="search-form mr-2" method="GET" action="{% url 'products' %}">
                 <input class="form-control search-input" type="text" aria-label="Search" name="q">
                 <input class="search-btn btn" type="submit" value="Search">    
         </form>
@@ -21,8 +21,6 @@
             {% for artist in artists %}
                 <a class="dropdown-item" href="{% url 'products' %}?artist={{ artist.name }}">{{ artist.name }}</a>
             {% endfor %}
-                <!-- <a class="dropdown-item" href="{% url 'products' %}?artist=solid_blake">Solid Blake</a>
-                <a class="dropdown-item" href="{% url 'products' %}?artist=modus">Modus</a> -->
             </div>
         </div>
         <div class="mr-2 dropdown">
@@ -40,8 +38,6 @@
 
 {% block content %}
 <div class="container-fluid">
-    <!-- <div class="row main-font d-flex align-items-center"> -->
-    <!-- </div> -->
     <div class="row">
     {% for product in products %}
         <div class="col-xs-12 col-sm-6 col-lg-3">

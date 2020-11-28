@@ -232,25 +232,16 @@ gunicorn
 
 Jonathan 12.11.2020
 Checkout
-* Order and OrderLineItem. Don't save to the database. Write line total as property on the model.
-* Reading to do, Jonathan sent on Slack
 * More comments on webhooks. URLs to Stripe documentation. Particularly on the delay on checkout 
-* SQLite committed to repo. Add to gitignore, but only later when close to end.
-* SECRET_KEY and DEBUG variables 
 
 Jonathan 27.11.2020
 * Fix arrows on home page
-* Disable verifications step or link to send email
 * Give instructions for creating superuser
 
 # To Do
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
-* Checkout - Do I need extra css file for checkout?
-* Checkout - amend styling of country input
-* Products - fix the search bar alignment
 * Change photos for smaller screens
-
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -281,6 +272,14 @@ Jonathan 27.11.2020
 * Fonts - vh for headings
 * Messages - add messages
 * Profile - why is updated details not working?
+* Checkout - amend styling of country input
+* Products - fix the search bar alignment
+* Checkout - Do I need extra css file for checkout?
+* Disable verifications step or link to send email
+* SQLite committed to repo. Add to gitignore, but only later when close to end.
+* SECRET_KEY and DEBUG variables 
+* Order and OrderLineItem. Don't save to the database. Write line total as property on the model.
+* Reading to do, Jonathan sent on Slack
 
 # Project Requirements
 ## Main Technologies
