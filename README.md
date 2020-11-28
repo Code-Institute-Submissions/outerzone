@@ -248,7 +248,6 @@ Jonathan 27.11.2020
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
-* Messages - add messages
 * Products - fix the search bar alignment
 * Change photos for smaller screens
 * Profile - why is updated details not working?
@@ -280,6 +279,7 @@ Jonathan 27.11.2020
 * Buttons - why is btn writing white?
 * Fix padding and text size for smaller screens 
 * Fonts - vh for headings
+* Messages - add messages
 
 # Project Requirements
 ## Main Technologies
