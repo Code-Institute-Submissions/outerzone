@@ -8,7 +8,7 @@
             <h2>Add Product</h2>
             <form method="POST" action="{% url 'add_product' %}" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ productForm|crispy }}
+                {{ form|crispy }}
                 <div class="form-row justify-content-end">
                     <div class="col-auto">
                         <a class="btn secondary-btn" href="{% url 'products' %}">Cancel</a>
