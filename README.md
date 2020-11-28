@@ -250,7 +250,7 @@ Jonathan 27.11.2020
 * Checkout - amend styling of country input
 * Products - fix the search bar alignment
 * Change photos for smaller screens
-* Profile - why is updated details not working?
+
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -280,6 +280,7 @@ Jonathan 27.11.2020
 * Fix padding and text size for smaller screens 
 * Fonts - vh for headings
 * Messages - add messages
+* Profile - why is updated details not working?
 
 # Project Requirements
 ## Main Technologies
