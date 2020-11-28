@@ -249,6 +249,7 @@ Jonathan 27.11.2020
 * Checkout - Do I need extra css file for checkout?
 * Checkout - amend styling of country input
 * Messages - add messages
+* Products - fix the search bar alignment
 * Change photos for smaller screens
 
 # Done 
