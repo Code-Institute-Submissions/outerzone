@@ -165,10 +165,11 @@ a:hover {
 
 /*-- Messages --*/
 
-.message-container {
+/* .message-container {
     position: fixed;
     top: 2rem;
     right: 2rem;
+    z-index: 99999;
 }
 
 .custom-toast {
@@ -183,6 +184,25 @@ a:hover {
     height: 100px;
     overflow-x: hidden;
     overflow: auto;
+    background-color: black;
+} */
+
+/*-- Alerts --*/
+
+.alert {
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.alert-blue {
+    background-color: #02B4D7;
+}
+
+.alert-red {
+    background-color: #812141;
+    color: #ffffff;
 }
 
 /*--Products--*/
