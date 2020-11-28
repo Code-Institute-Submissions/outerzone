@@ -235,13 +235,15 @@ Checkout
 * More comments on webhooks. URLs to Stripe documentation. Particularly on the delay on checkout 
 
 Jonathan 27.11.2020
-* Fix arrows on home page
+
 * Give instructions for creating superuser
 
 # To Do
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Change photos for smaller screens
+* Fix readme logo
+* Update artist JSON with new fields
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -280,6 +282,7 @@ Jonathan 27.11.2020
 * SECRET_KEY and DEBUG variables 
 * Order and OrderLineItem. Don't save to the database. Write line total as property on the model.
 * Reading to do, Jonathan sent on Slack
+* Fix arrows on home page
 
 # Project Requirements
 ## Main Technologies
