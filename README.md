@@ -238,8 +238,12 @@ Checkout
 * SQLite committed to repo. Add to gitignore, but only later when close to end.
 * SECRET_KEY and DEBUG variables 
 
+Jonathan 27.11.2020
+* Fix arrows on home page
+* Disable verifications step or link to send email
+* Give instructions for creating superuser
+
 # To Do
-* How do I delete the artists model from products?
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Checkout - Do I need extra css file for checkout?

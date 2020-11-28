@@ -6,10 +6,10 @@ from artists.models import Artist
 # Register your models here.
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'image',
         'name',
         'artist',
         'price',
+        'image'
     )
     ordering = ('artist',)
 
