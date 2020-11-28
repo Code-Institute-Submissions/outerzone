@@ -251,6 +251,7 @@ Jonathan 27.11.2020
 * Messages - add messages
 * Products - fix the search bar alignment
 * Change photos for smaller screens
+* Profile - why is updated details not working?
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)

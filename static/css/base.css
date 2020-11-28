@@ -69,10 +69,12 @@ body {
     border-radius: 0;
 }
 
+i,
 a {
     color: #ffffff;
 }
 
+i:hover,
 a:hover {
     color: #8a8a8a;
     text-decoration: none;
@@ -119,10 +121,6 @@ a:hover {
     color: #ffffff;
 }
 
-i {
-    color: #ffffff;
-}
-
 .basket-row {
     background-color: #0E0E0E;
     color: #ffffff;
@@ -165,6 +163,27 @@ i {
     padding-top: 2rem;
 }
 
+/*-- Messages --*/
+
+.message-container {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 1em;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow: auto;
+}
 
 /*--Products--*/
 
