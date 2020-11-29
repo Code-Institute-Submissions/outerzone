@@ -51,7 +51,7 @@ h1 {
 }
 
 body {
-    background-image: url('/media/ozbackground.png');
+    background-image: url('https://ms4outerzone.s3-eu-west-1.amazonaws.com/media/ozbackground.png');
     repeat: no-repeat;
     background-position: center;
     background-size: cover;
