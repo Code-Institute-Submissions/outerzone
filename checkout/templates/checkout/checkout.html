@@ -45,7 +45,7 @@
             <div class="col-12">
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
-                    <legend>Payment Details</legend>
+                    <legend>Delivery Details</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                     {{ order_form.phone_number | as_crispy_field }}
@@ -65,7 +65,7 @@
                         <a href="{% url 'account_login' %}">Login</a>
                     </label>
                 {% endif %}
-
+                    <legend class="mt-2">Payment Details</legend>
                     <!--For Stripe element-->
                     <div id="card-element"></div>
                     <!--Display Errors-->

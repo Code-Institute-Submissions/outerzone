@@ -187,11 +187,16 @@ The page displays as a single column in small screens and over two/three columns
 
 ### Product Detail
 Each product has a product detail page, which allows the user to add the item to their basket. The single input form allows them to add any quantity from 1 to 99.
-The Back to Shop and 
+The Back to Shop and Checkout links provide easy navigation for the user.
+Alerts confirm to the user that a specific quantity of the product has been added to the basket. The shopping basket icon also updates with the accumulative price of the products in the basket.
 
 ### Basket
+Provides a table, each row with the details of a product in the basket, including the quantity and sub-total. The edit button allows the user to amend the quantity, which then updates the sub-total and total.
+The bin allows the user to delete the product from the basket completely. The links are consistent with the previous product page. The secondary button allows the user to return to the shop and the primary button allows the user to continue to the checkout.
 
 ### Checkout 
+* Basket Summary - A summary of the basket contents are provided, along with a link to bring the user back to the basket in order to adjust the contents.
+* Delivery Details - A form 
 
 ### Order Confirmation
 
@@ -210,7 +215,6 @@ The Back to Shop and
 * Login
 * Forgot password
 * Sign Out 
-
 
 ### Features to be implemented
 * Forum - a chatroom could be implemented to provide users with further reason to sign up for an account. It would help to establish a strong fanbase and community around the label.

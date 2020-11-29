@@ -22,8 +22,8 @@
                 </div>
             </form>
             <div class="form-row mt-4 justify-content-end">
-                <a href="{% url 'checkout' %}" class="btn secondary-btn mr-2">Checkout</a>
-                <a href="{% url 'products' %}" class="btn">Back to Shop</a>
+                <a href="{% url 'products' %}" class="btn secondary-btn mr-2">Back to Shop</a>
+                <a href="{% url 'view_basket' %}" class="btn">Basket</a>
             </div>
         {% if request.user.is_superuser %}
             <div class="mt-4 row">
