@@ -191,12 +191,18 @@ of code tested and produce a report. This can be found as an html file in the [h
 
 #### All Auth
 * Sign Up
+    1. Form cannot be submitted until all fields are completed.
+    2. Verification email is sent to user's email address.
+    3. The link within the email address redirects to confirmation that user's account is set up.
 
 * Login
     1. Sign Up link appears blue and directs to sign up page.
     2. Valid user and password details signs user in.
     3. Invalid combination shows relevant error messages.
     4. Forgot password directs to forgot password page.
+
+* Forgot Password 
+    1. Sends email to user with link to reset password.
 
 * Sign Out 
     1. Only those who are logged in are shown Logout link.
