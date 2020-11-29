@@ -269,8 +269,8 @@ Jonathan 27.11.2020
 * Fix image resolutions on home page 
 * Add if statements so only completed links appear on artist page 
 * Add link to artist page on products page.
-* Products - Search bar isn't working.
-* Products - if no products by that artist, display a message.
+* Products - if no products by that artist, display a message so page can be refreshed
+* Profile - add name to page
 
 
 # Done 
@@ -313,6 +313,7 @@ Jonathan 27.11.2020
 * Fix arrows on home page
 * Give instructions for creating superuser
 * Update artist JSON with new fields
+* Products - Search bar isn't working.
 
 # Project Requirements
 ## Main Technologies

@@ -94,24 +94,73 @@ of code tested and produce a report. This can be found as an html file in the [h
     4. All products link to the appropriate product detail page.
 
 * Search and Filters
-    1. Typing in 
-    
+    1. When search term is typed and search button pressed, products with a matching title or artist name display.
+    2. Invalid search terms display a blank screen. ******Add a message*******
+    3. The casing of the search input will not impact the search results.
+    4. Pressing search button without a search term displays an error message to ask user to enter search term.
+    5. Filter by artist shows a list of all artists listed on the database.
+    6. Clicking on each artist will display only their products.
+    7. If an artist does not have any products on the database, a blank screen appears. ******Add a message*******
+    8. Sort by price, artist and title orders all the products appropriately.
 
+#### Product Detail
+* Data
+    1. The appropriate image, title and price for the product appears.
 
-
+* Form 
+    1. The quantity is automatically set to 1.
+    2. The quantity can be increased or decreased using the arrows on the number input.
+    3. The quantity cannot drop below 1 and cannot got past 99.
+    4. When adding a new product to the basket, a success message appears to show that the relevant product and quantity has been added.
+    5. When increasing the quantity of a product already in the basket, a success message appears to show that the quantity has increased to the appropriate figure.
+    6. The shopping basket icon total amends as the user clicks the add to basket button.
 
 #### Basket
-1. Check link directs to shopping basket.
-2. If no items have been put in the basket, check that message appears "basket is empty".
-3. If items have been added to the basket, check that relevant items, quantity, subtotal and total appear.
-4. Check that item quantity can be changed in the basket by updating the number and clicking on the edit icon.
-5. If item quantity is updated, ensure that subtotal and total update appropriately.
-6. Check that items can be deleted from basket by clicking on the bin icon.
-7. If item is deleted, check that basket total also updates.
-8. Return to shop button returns to products page.
-9. Checkout button directs to checkout.
+ * Basket products
+    2. If no products have been put in the basket, message appears "basket is empty".
+    3. If products have been added to the basket, the relevant items, quantity, subtotal and total appear.
+    4. The product quantity can be changed in the basket by updating the number and clicking on the edit icon.
+    5. If product quantity is updated, ensure that subtotal and total update appropriately.
+    6. Products can be deleted from basket by clicking on the bin icon.
+    7. If product is deleted, check that basket total also updates.
 
+* Links
+    1. Return to shop button returns to products page.
+    2. Checkout button directs to checkout.
 
+#### Checkout
+* Product Details
+    1. Product details match the details in the basket.
+    2. Total charged to the card reflects cost of items in the basket.
+    3. The Adjust Basket button leads back to the basket page.
+
+* Payment Details 
+    1. Form cannot be submitted if any of the fields with the asterix(*) are left blank.
+    2. Form can be submitted if only the fields with the asterix(*) are completed.
+    3. Form can be submitted with all fields completed.
+    4. Email address field can only accept input that follow email convention.
+    5. Save delivery details can be ticked and unticked.
+    6. If ticked, delivery details save to profile.
+    7. If unticked, delivery details do not save to profile. 
+    8. If user already has delivery details saved on their profile, these prepopulate the form.
+    9. The form cannot be submitted without card details.
+    10. The card details must match a credit/debit card number convention.
+    11. Clicking the complete order button processes payment if form is completed appropriately.
+    12. If form fields are missing or completed inappropriately, error messages will appear at the appropriate field when the complete order form is clicked.
+    13. If unsuitable credit card details are used, clicking the complete order button will direct to processing page and then redirect back to the checkout page. An error message should appear to show the user the issue.
+
+#### Order Confirmation
+* Alert
+    1. An alert appears to confirm the order number and inform user that a confirmation email has been sent to them.
+    2. A confirmation email is sent to the user's email address.
+
+* Order Details
+    1. The appropriate order details are listed.
+
+#### Profile
+* Delivery Details
+    1. The delivery details are prepopulated with the details input on the user's order.
+    2. 
 
 ### User Feedback 
 ### Problem Solving
