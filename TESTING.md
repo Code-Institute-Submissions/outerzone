@@ -160,7 +160,32 @@ of code tested and produce a report. This can be found as an html file in the [h
 #### Profile
 * Delivery Details
     1. The delivery details are prepopulated with the details input on the user's order.
-    2. 
+    2. Any field can be amended and updated by clicking on the update details form.
+    3. Updated details pull through to the checkout page.
+
+* Order History
+    1. If the user has made previous orders, the details display in a list.
+    2. The order number links to further details about the order.
+
+#### Add Product
+    1. Only superusers can access this page.
+    2. If non-superuser tries to access this page, a message appears to inform user that only superusers can access.
+    3. The artist field displays a dropdown of all artists on the database.
+    4. Products cannot be added for an artist that is not already on the database.
+    5. The form cannot be submitted without all fields marked with an asterix(*) are completed.
+    6. An image can be uploaded from the user's local system and added to the form.
+    7. By clicking the add product button, the product is added to the database, appears on the products page, the relevant artists' page and has its own product detail page.
+    8. Clicking cancel redirects the user to the products page.
+
+#### Add Artist
+    1. Only superusers can access this page.
+    2. If non-superuser tries to access this page, a message appears to inform user that only superusers can access.
+    3. The artist field displays a dropdown of all artists on the database.
+    4. Products cannot be added for an artist that is not already on the database.
+    5. The form cannot be submitted without all fields marked with an asterix(*) are completed.
+    6. An image can be uploaded from the user's local system and added to the form.
+    7. By clicking the add product button, the product is added to the database, appears on the products page, the relevant artists' page and has its own product detail page.
+    8. Clicking cancel redirects the user to the products page.
 
 ### User Feedback 
 ### Problem Solving
