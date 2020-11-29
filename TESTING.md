@@ -192,13 +192,17 @@ of code tested and produce a report. This can be found as an html file in the [h
 #### All Auth
 * Sign Up
 
-* Sign In 
+* Login
+    1. Sign Up link appears blue and directs to sign up page.
+    2. Valid user and password details signs user in.
+    3. Invalid combination shows relevant error messages.
+    4. Forgot password directs to forgot password page.
 
-* Logout 
-1. Only those who are logged in are shown Logout link.
-2. Text appears to ask user if they are sure they wish to log out.
-3. The remain signed in button redirects to the home page.
-4. The 
+* Sign Out 
+    1. Only those who are logged in are shown Logout link.
+    2. Text appears to ask user if they are sure they wish to log out.
+    3. The remain signed in button redirects to the home page.
+    4. The sign out button signs out the user and redirects them to the home page. An alert appears to confirm that user has been signed out.
 
 ### User Feedback 
 ### Problem Solving
