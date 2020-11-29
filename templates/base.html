@@ -97,7 +97,10 @@
                 </div>
                 <!-- {% include 'includes/toasts/toast_success.html' %} -->
             {% else %}
-                {% include 'includes/toasts/toast_info.html' %}
+                <!-- {% include 'includes/toasts/toast_info.html' %} -->
+                <div class="alert alert-blue" role="alert">
+                    {{ message }}
+                </div>
             {% endif %}
         {% endwith %}
     {% endfor %}
