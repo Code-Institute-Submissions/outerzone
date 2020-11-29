@@ -41,6 +41,53 @@ of code tested and produce a report. This can be found as an html file in the [h
     5. Grid design responds as expected, dependent upon screen size.
 
 #### Home Page 
+* Links 
+    1. Links appear blue and turn grey when hovered over.
+    2. Artists and Buy links lead to artists page and products page, respectively.
+    3. When clicking on downward arrows, page smooth scrolls to the next block of text. 
+    4. When clicking on upward arrow, page smooth scrolls to the top of the page.
+
+* Images 
+    1. Images remain fixed when scrolling.
+    2. Focal point of images are visible on different screen resolutions. 
+    3. Images change appropriately, dependent upon screen resolution.
+
+#### Artists 
+* Artist List
+    1. All artists in the database are listed on the page.
+    2. The image and artist name match.
+    3. Both the image and artist name link to the appropriate artist page.
+
+#### Artist Detail
+* Data 
+    1. The appropriate name, image, description, social media links, youtube video, products and events appears for each artist.
+
+* Buy 
+    1. If products for the artist are listed in the database, their image appears in the Buy container.
+    2. Each image links to the appropriate product detail page.
+
+* Events 
+    1. If events for the artist are listed in the database, they appear on the page.
+    2. The events are listed in chronological order.
+    3. The accordion is closed when the page is loaded.
+    4. By clicking on the accordion title, the detail appears.
+    5. The event detail matches the title.
+    6. The downward arrow disappears when the event is open.
+    7. More than one event can be opened at a time.
+
+* Listen 
+    1. If a youtube URL for the artist is listed in the database, a YouTube video appears in the Listen section.
+    2. The YouTube video width flexes to fit inside the Listen container on all screen resolutions.
+    3. The YouTube video plays the appropriate video.
+    4. The video can link to YouTube and opens in a new tab.
+
+* More 
+    1. If social media links are listed for the artist, they appear in this section.
+    2. Each icon links to the appropriate web page.
+    3. Each web page opens in a new tab.
+
+
+
 
 
 #### Shopping Basket

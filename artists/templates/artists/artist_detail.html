@@ -16,7 +16,7 @@
             <p>{{ artist.description }}</p>
         </div>
         <div class="col-12 col-md-4 main-font mt-4">
-            <h2 class="heading-font">buy</h2>
+            <h2 class="heading-font">Buy</h2>
         {% for product in products %}
             <a href="{% url 'product_detail' product.id %}">
                 <img class="img-thumbnail record-image" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}">
@@ -24,7 +24,7 @@
         {% endfor %}
         </div>
         <div class="col-12 col-md-4 main-font mt-4">
-            <h2 class="heading-font">events</h2>
+            <h2 class="heading-font">Events</h2>
         {% for event in events %}
             <button class="accordion-button" id="event-accordion{{ event.id }}">
                 <h6 class="event-heading">{{ event.name }}</h6>
@@ -38,14 +38,14 @@
         {% endfor %}   
         </div>
         <div class="col-12 col-md-4 main-font mt-4">
-            <h2 class="heading-font">listen</h2>
+            <h2 class="heading-font">Listen</h2>
             <iframe class="youtube" width="560" height="315" src="{{ artist.youtube_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="col-12 col-md-4 main-font mt-4">
-            <h2 class="heading-font">more</h2>
+            <h2 class="heading-font">More</h2>
             <div class="row">
                 <div class="col-4 col-md-6 pt-4">
-                    <a href="{{ artist.soundcloud_url }}">
+                    <a href="{{ artist.soundcloud_url }}"> target="_blank"
                         <div class="text-center">
                             <i class="fab fa-soundcloud"></i>
                         </div>
@@ -55,7 +55,7 @@
                     </a>
                 </div>
                 <div class="col-4 col-md-6 pt-4">
-                    <a href="{{ artist.discogs_url }}">
+                    <a href="{{ artist.discogs_url }}" target="_blank">
                         <div class="text-center">
                             <i class="fas fa-record-vinyl"></i>
                         </div>
@@ -65,7 +65,7 @@
                     </a>
                 </div>
                 <div class="col-4 col-md-6 pt-4">
-                    <a href="{{ artist.resident_advisor_url }}">
+                    <a href="{{ artist.resident_advisor_url }}" target="_blank">
                         <div class="text-center">
                             <i class="fas fa-record-vinyl"></i>
                         </div>
@@ -75,7 +75,7 @@
                     </a>
                 </div>
                 <div class="col-4 col-md-6 pt-4">
-                    <a href="{{ artist.instagram_url }}">
+                    <a href="{{ artist.instagram_url }}" target="_blank">
                         <div class="text-center">
                             <i class="fab fa-instagram"></i>
                         </div>
@@ -85,7 +85,7 @@
                     </a>
                 </div>
                 <div class="col-4 col-md-6 pt-4">
-                    <a href="{{ artist.facebook_url }}">
+                    <a href="{{ artist.facebook_url }}" target="_blank">
                         <div class="text-center">
                             <i class="fab fa-facebook"></i>
                         </div>

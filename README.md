@@ -261,14 +261,14 @@ Checkout
 
 Jonathan 27.11.2020
 
-* Give instructions for creating superuser
-
 # To Do
 * Testing - Lighthouse (in GoogleDev inspect section) analyses site. Can screenshot it
 * Testing - Stripe has dummy credit card details that show different errors
 * Change photos for smaller screens
 * Fix readme logo
-* Update artist JSON with new fields
+* Fix image resolutions on home page 
+* Add if statements so only completed links appear on artist page 
+* Add link to artist page on products page.
 
 # Done 
 * Get MEDIA_URL to work on html (nav logo and product images)
@@ -308,6 +308,8 @@ Jonathan 27.11.2020
 * Order and OrderLineItem. Don't save to the database. Write line total as property on the model.
 * Reading to do, Jonathan sent on Slack
 * Fix arrows on home page
+* Give instructions for creating superuser
+* Update artist JSON with new fields
 
 # Project Requirements
 ## Main Technologies
