@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="" target="_blank"><img src="" style="center" alt="Outer Zone Logo"></a>
+    <a href="" target="_blank"><img src="/media/bwlogo.jpg" style="center" alt="Outer Zone Logo"></a>
 </h1>
 
 <div align="center">
@@ -126,20 +126,27 @@ An SQL database was used for this project. The structure of the relationships be
 <img src="media/ms4_data.png" style="center" alt="Data relationships">
 ---
 ## Technologies
+
+* [Gitpod](https://www.gitpod.io/)
+* [Github](https://github.com/) - version control and storage of the project
+* [Heroku](https://dashboard.heroku.com/) - for deployment of the completed website
+* HTML and CSS 
+* Javascript - used for accordion function on the artist detail page.
+* [JQuery](https://jquery.com/) - Javascript library user for the navbar and search/filter functionality on products page.
+* [Django](https://www.djangoproject.com/) - Python web framework.
+* [Django Crispy Forms](https://github.com/django-crispy-forms) - styling of Django Forms.
+* [Stripe](https://stripe.com/en-gb) - to enable payment through the site.
+* [Postgres](https://www.postgresql.org/) - A SQL database used to store project data.
+* [AWS](https://aws.amazon.com/) - for cloud storage of the static files and media.
+* [Bootstrap](https://getbootstrap.com/) - for the responsive grid layout and navbar. All templates were tailored to the needs of the site. 
+* [Google Fonts](https://fonts.google.com/) - used to style the website fonts.
+* [Font Awesome](https://fontawesome.com/) - icons for certain buttons.
+
 ---
 ## Testing 
 
-pip3 install coverage
-coverage run --source-artists manage.py test
-coverage report
-coverage html
-python3 -m http.server
+Testing details can be found here in [testing.md](TESTING.md)
 
-### Tools 
-### Automated Testing
-### User Testing
-### User Feedback 
-### Problem Solving
 ---
 ## Deployment 
 
