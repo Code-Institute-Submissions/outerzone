@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Artist(models.Model):
     name = models.CharField(max_length=300)
+    display_name = models.CharField(max_length=254, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     youtube_url = models.URLField(max_length=1050, null=True, blank=True)
@@ -14,6 +15,9 @@ class Artist(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_display_name(self):
+        return self.display_name
 
 
 class Event(models.Model):

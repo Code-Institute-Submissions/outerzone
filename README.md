@@ -196,24 +196,38 @@ git push
 4. Go to the [Heroku website](www.heroku.com). If you don't already have an account, create one, then log in.
 5. Create a new app for the project. You can do this by clicking on the new button at the top left of the screen, then choose "create new app" from the dropdown.
 6. You'll be prompted to give the app a unique name and choose the region most appropriate for your location.
+7. On the resources tab, set up a new Postgres database. You can use the free plan.
 7. Go to settings > reveal config vars and set the following variables:
-    * "SECRET_KEY"
-    * "STRIPE_PUBLIC_KEY"
-    * "STRIPE_SECRET_KEY"
-    * "STRIPE_WH_SECRET"
-
-
-
-pip3 install:
-django
-django-allauth
-django-crispy-forms
-stripe
-Pillow
-django-countries
-dj_database_url
-psycopg2-binary
-gunicorn
+    * AWS_ACCESS_KEY_ID
+    * AWS_SECRET_ACCESS_KEY
+    * DATABASE_URL
+    * EMAIL_HOST_PASS
+    * EMAIL_HOST_USER
+    * SECRET_KEY
+    * STRIPE_PUBLIC_KEY
+    * STRIPE_SECRET_KEY
+    * STRIPE_WH_SECRET 
+    * USE_AWS
+8. Go to the deploy tab of your Heroku dashboard and link your Heroku app with your GitHub. Tick the box for automatic deployment.
+9. Back in your IDE terminal, login to Heroku with the command:
+```
+heroku login -i
+```
+10. Migrate all your data by using the command:
+```
+python3 manage.py migrate
+```
+11. Load in the data one model at at a time, using the command below. Start with the artists file.
+```
+python3 manage.py loaddata <data name>
+```
+12. Create a superuser account for yourself using the command:
+```
+python3 manage.py createsuperuser
+```
+13. Git add, commit and push your changes (see step 3). Go back to your Heroku dashboard and, once the app build is complete, open the app using the URL provided on settings > domains.
+14. Your project should now be live.
+15. You can read, create, update and delete data by adding '/admin' to the domain URL and logging in with your superuser details.
 
 ---
 ## Credits 
@@ -229,6 +243,17 @@ gunicorn
 
 
 **** MY NOTES ONLY - NOT PART OF FINAL README ****
+
+pip3 install:
+django
+django-allauth
+django-crispy-forms
+stripe
+Pillow
+django-countries
+dj_database_url
+psycopg2-binary
+gunicorn
 
 Jonathan 12.11.2020
 Checkout

@@ -13,9 +13,9 @@
             {% for artist in artists %}
                 <a href="{% url 'artist_detail' artist.id %}">   
                     <div class="row mt-3">
-                        <div class="col-6"><img class="img-thumbnail" src="{{ MEDIA_URL }}{{ artist.image }}" alt="{{ artist.name }}"></div>
+                        <div class="col-6"><img class="img-thumbnail" src="{{ MEDIA_URL }}{{ artist.image }}" alt="{{ artist.display_name }}"></div>
                         <div class="col-6">
-                            <h2 class="heading-font">{{ artist.name}}</h2>
+                            <h2 class="heading-font">{{ artist.display_name}}</h2>
                         </div>
                     </div>
                 </a>

@@ -9,7 +9,7 @@
                 <div class="col-12 pb-3"><img class="img-thumbnail artist-thumb" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}"></div>
                 <div class="col-12">
                     <h2 class="heading-font">{{ product.name}}</h2>
-                    <h4>{{ product.artist }}</h4>
+                    <h4>{{ .display_name }}</h4>
                     <h3>£{{ product.price }}</h3>
                 </div>
             </div>
