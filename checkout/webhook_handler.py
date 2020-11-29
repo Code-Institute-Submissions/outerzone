@@ -1,3 +1,5 @@
+# Taken from the Stripe website (https://stripe.com/docs/webhooks/build#example-code) and Code Institute Boutique Ado tutorial.
+
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string

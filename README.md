@@ -344,6 +344,7 @@ python3 manage.py createsuperuser
 ### Code 
 * The Code Institute tutorials for the Boutique Ado website provided the basis for the majority of the website. Views, models and forms were then tailored to suit the specific needs of the site.
 * The Bootstrap library was used for the alerts and navbar. The HTML and CSS was then tailored to fit with the aesthetic of the site.
+* The webhooks code are mainly taken from the [Stripe](https://stripe.com/en-gb) documentation and tweaked to suit the needs of this project. The tweaks were aided by the Code Institue Boutique Ado tutorials.
 
 ### Acknowledgements
 * Thanks to Wardy and Dom for the inspiration for the site.
@@ -384,6 +385,7 @@ Jonathan 27.11.2020
 * Products - if no products by that artist, display a message so page can be refreshed
 * Edit/Delete artist
 * More comments on webhooks. URLs to Stripe documentation. Particularly on the delay on checkout 
+* webhooks aren't working.
 
 
 # Done 

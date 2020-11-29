@@ -1,3 +1,5 @@
+# Taken from the Stripe website (https://stripe.com/docs/webhooks/build#example-code) and Code Institute Boutique Ado tutorial.
+
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
