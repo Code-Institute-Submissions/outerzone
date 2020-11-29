@@ -86,11 +86,18 @@ of code tested and produce a report. This can be found as an html file in the [h
     2. Each icon links to the appropriate web page.
     3. Each web page opens in a new tab.
 
+#### Products
+* Products
+    1. All products listed in the database appear as separate cards on the product page.
+    2. Images, names, artists and prices all match the information in the database.
+    3. The artists' display names appear rather than their names (ie the artist names are capitalised and have spaces between words).
+    4. All products link to the appropriate product detail page.
+    
 
 
 
 
-#### Shopping Basket
+#### Basket
 1. Check link directs to shopping basket.
 2. If no items have been put in the basket, check that message appears "basket is empty".
 3. If items have been added to the basket, check that relevant items, quantity, subtotal and total appear.
