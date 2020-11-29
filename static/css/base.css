@@ -95,15 +95,13 @@ a:hover {
 
 /*--Nav Bar--*/
 
-/* needed to overwrite Bootstrap styling */
-
 .navbar-toggler-icon,
 .navbar-dark,
 .navbar-toggler,
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-    color: #ffffff!important;
-    border-color: #ffffff!important;
+    color: #ffffff!important; /* needed to overwrite Bootstrap styling */
+    border-color: #ffffff!important; /* needed to overwrite Bootstrap styling */
     border-radius: 0;
 }
 

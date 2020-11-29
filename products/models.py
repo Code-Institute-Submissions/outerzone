@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class Product(models.Model):
     artist = models.ForeignKey(
         'artists.Artist', null=True, blank=True, on_delete=models.SET_NULL)

@@ -3,7 +3,6 @@ from .models import Product
 from artists.models import Artist
 
 
-# Register your models here.
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name',

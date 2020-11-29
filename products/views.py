@@ -9,7 +9,6 @@ from artists.models import Artist
 from .forms import ProductForm
 
 
-# Create your views here.
 def all_products(request):
     """ View returns all products """
     products = Product.objects.all()

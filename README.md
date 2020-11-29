@@ -180,10 +180,14 @@ The page displays as a single column in small screens and over two/three columns
 * More - This section provides links to the users social media pages, including their Soundcloud, where the user can hear a selection of the artists tunes and mixes.
 
 ### Products
-* Products 
-* Search and Filters
+* Products - displayed using the Bootstrap card styling, which has been tailored to suit the needs of the site. Products are listed full width on small screens, two per row on medium screens and four per row on large screens.
+* Search Bar - allow the user to search by keyword. If the keyword features in the product name or artist name, the product will display.
+* Filter - the filter allows the user to filter by artist. Each artist on the database is automatically listed on the drop down, by pulling the data through from the artists model.
+* Sort Options - the sort options allow the user to order products by name, artist or price.
 
 ### Product Detail
+Each product has a product detail page, which allows the user to add the item to their basket. The single input form allows them to add any quantity from 1 to 99.
+The Back to Shop and 
 
 ### Basket
 
@@ -343,7 +347,7 @@ python3 manage.py createsuperuser
 
 ### Code 
 * The Code Institute tutorials for the Boutique Ado website provided the basis for the majority of the website. Views, models and forms were then tailored to suit the specific needs of the site.
-* The Bootstrap library was used for the alerts and navbar. The HTML and CSS was then tailored to fit with the aesthetic of the site.
+* The Bootstrap library was used for the alerts, navbar and product cards. The HTML and CSS was then tailored to fit with the aesthetic of the site.
 * The webhooks code are mainly taken from the [Stripe](https://stripe.com/en-gb) documentation and tweaked to suit the needs of this project. The tweaks were aided by the Code Institue Boutique Ado tutorials.
 
 ### Acknowledgements

@@ -76,9 +76,8 @@
             </div>
         </div>
 
-<!-- pop up messages to confirm user actions -->
+<!-- alerts to confirm user actions -->
 {% if messages %}
-    <div class="message-container">
     {% for message in messages %}
         {% with message.level as level %}
             {% if level == 40 %}
@@ -100,12 +99,9 @@
             {% endif %}
         {% endwith %}
     {% endfor %}
-    </div>
 {% endif %}
 
     </header>
-
-
 
 {% block content %}
 {% endblock %}

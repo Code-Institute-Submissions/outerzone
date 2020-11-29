@@ -6,7 +6,6 @@ from django.dispatch import receiver
 from django_countries.fields import CountryField
 
 
-# Create your models here.
 class UserProfile(models.Model):
     """ Maintains delivery information and order history """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -28,5 +27,4 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     """ Create or update the user profile """
     if created:
         UserProfile.objects.create(user=instance)
-    # Existing users: save the profile
     instance.userprofile.save()
