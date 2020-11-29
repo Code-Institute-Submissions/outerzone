@@ -196,25 +196,31 @@ The bin allows the user to delete the product from the basket completely. The li
 
 ### Checkout 
 * Basket Summary - A summary of the basket contents are provided, along with a link to bring the user back to the basket in order to adjust the contents.
-* Delivery Details - A form 
+* Delivery Details - A form for user to provide delivery details. If the user is logged in and has saved delivery details, these fields will prepopulate. User has the option to save delivery details to their profile. If the user is not logged in, buttons will appear that invites the user to create an account or log in. Form validation ensures that appropriate details are entered into fields.
+* Payment Details - Stripe is used to create a space for user to enter credit card details.
+* Complete Order - Once all the correct details are entered, the Complete Order button places the order and directs user to the order confirmation page.
 
 ### Order Confirmation
+A success alert appears to highlight the order number and confirm that a confirmation email has been sent to the user.
+Details of the order are also listed.
 
 ### Profile
-* Delivery Details
-* Order History
+* Delivery Details - details are prepopulated if the user chose to previously save details. The user can update the details by completing the fields and clicking the Update Your Details button.
+* Order History - lists all previous orders and provides a link to further details.
 
 ### Add Product
-* Form 
+Only available to superusers. Allows user to complete the form to add a product to the database. The product must be linked to an existing artist on the database.
+Once submitted, the product details are drawn through to the products page and relevant artists' page. A product detail page is also created for the product.
 
 ### Add Artist 
-* Form
+Only available to superusers. Allows user to complete the form to add an artist to the database.
+Once submitted, the artist details are drawn through to the artists page and an artist detail page is also created.
 
 ### All Auth 
-* Sign Up
-* Login
-* Forgot password
-* Sign Out 
+* Sign Up - Users are asked to provide an email address, username and password. If an account is already registered to the email address, a warning message will display. If the form is validated, the user is sent an email to ask them to verify their account by clicking a link.
+* Login - Users can sign in using either their email address or username. If the correct combination of username/email and password is entered, an error message displays. If the correct details are entered, the user is directed to the home page and an alert confirms that they are logged in.
+* Forgot password - The user can enter their email address in order to be sent an email that allows them to click a link and reset their password.
+* Sign Out - Ther user is asked to confirm that they wish to sign out or they are given the option to remain signed in. If they choose to remain signed in, they are redirected to the home page. If the sign out, they are also redirected to home page and an alert confirms that they have signed out.
 
 ### Features to be implemented
 * Forum - a chatroom could be implemented to provide users with further reason to sign up for an account. It would help to establish a strong fanbase and community around the label.
