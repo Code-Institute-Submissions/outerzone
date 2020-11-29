@@ -211,4 +211,15 @@ of code tested and produce a report. This can be found as an html file in the [h
     4. The sign out button signs out the user and redirects them to the home page. An alert appears to confirm that user has been signed out.
 
 ### User Feedback 
-### Problem Solving
+Friends, family and colleagues were enlisted to test the site on mobile phones, tablets, laptops and desktops. They also tested the site 
+using different bandwidths to ensure that the there were no significant loading time lags.
+
+The following changes were made in response to user feedback:
+* Home Page images were amended so they displayed better on smaller screens. Although the Google Dev tools showed that the images displayed well on mobile, this was not actually the case when real mobile phones were used.
+* The fixed scroll for the home page was not working on mobiles.
+* User feedback discovered that verification emails were not sending when users tried to sign up. This was amended by adding a new EMAIL_HOST_PASS to the Heroku config variables.
+
+#### Bugs 
+A bug was discovered with the admin database that prevented me from updating products. The products were listed with the image as the 
+first column. When the image was clicked, it simply displayed the image rather than the expected response of directing to the editable 
+view of the product. This problem was resolved by changing the order of the products admin listing in admin.py.
