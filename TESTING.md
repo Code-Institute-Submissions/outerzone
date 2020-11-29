@@ -168,6 +168,7 @@ of code tested and produce a report. This can be found as an html file in the [h
     2. The order number links to further details about the order.
 
 #### Add Product
+* Form
     1. Only superusers can access this page.
     2. If non-superuser tries to access this page, a message appears to inform user that only superusers can access.
     3. The artist field displays a dropdown of all artists on the database.
@@ -178,14 +179,26 @@ of code tested and produce a report. This can be found as an html file in the [h
     8. Clicking cancel redirects the user to the products page.
 
 #### Add Artist
+* Form
     1. Only superusers can access this page.
     2. If non-superuser tries to access this page, a message appears to inform user that only superusers can access.
     3. The artist field displays a dropdown of all artists on the database.
     4. Products cannot be added for an artist that is not already on the database.
     5. The form cannot be submitted without all fields marked with an asterix(*) are completed.
     6. An image can be uploaded from the user's local system and added to the form.
-    7. By clicking the add product button, the product is added to the database, appears on the products page, the relevant artists' page and has its own product detail page.
-    8. Clicking cancel redirects the user to the products page.
+    7. By clicking the add artist button, the artist is added to the database, appears on the artists page, on the dropdown on product filter page and has its own artist detail page.
+    8. Clicking cancel redirects the user to the artists page.
+
+#### All Auth
+* Sign Up
+
+* Sign In 
+
+* Logout 
+1. Only those who are logged in are shown Logout link.
+2. Text appears to ask user if they are sure they wish to log out.
+3. The remain signed in button redirects to the home page.
+4. The 
 
 ### User Feedback 
 ### Problem Solving
