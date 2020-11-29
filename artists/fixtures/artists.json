@@ -4,10 +4,15 @@
         "model": "artists.artist",
         "fields": {
             "name": "modus",
+            "display_name": "Modus",
             "description": "New act and longtime friend, Modus (aka Dominic Meade) draws on years of experience in the techno scenes of Glasgow and Edinburgh. His music takes inspiration from an era of techno that's held dearer than any other in Glasgow whilst retaining a style Dom's carved out for himself in the studio, through his years DJing with us and as a resident at Edinburgh's seminal techno party, Substance.",
             "image": "modussquirrel.jpg",
-            "discogs": "https://www.discogs.com/artist/6983912-Modus-15",
-            "soundcloud": "https://soundcloud.com/modus_gla"
+            "youtube_url": "https://www.youtube.com/embed/w0GW8I2j3KI",
+            "discogs_url": "https://www.discogs.com/artist/6983912-Modus-15",
+            "soundcloud_url": "https://soundcloud.com/modus_gla",
+            "facebook_url": "https://www.facebook.com/modusgla/",
+            "instagram_url": "https://www.instagram.com/itsmodus/",
+            "resident_advisor_url": "https://www.residentadvisor.net/dj/modus-uk"
         }
     },
     {
@@ -15,10 +20,15 @@
         "model": "artists.artist",
         "fields": {
             "name": "solid_blake",
+            "display_name": "Solid Blake",
             "description": "Emma 'Solid Blake' Blake is a DJ and Producer who hails from Glasgow and now plays a prominent role in the bustling electronic music scene emerging from Copenhagen. Having cut her teeth working as a producer at Glasgow's highly influential student radio station Subcity Radio, since her move Blake has quietly built a glowing reputation among the underground techno community in Copenhagen as part of renowned DJ collective Apeiron Crew.",
-            "image": "solidblake.jpg",
-            "discogs": "https://www.discogs.com/artist/5489051-Solid-Blake",
-            "soundcloud": "https://soundcloud.com/solid_blake"
+            "image": "solidblake.jpeg",
+            "youtube_url": "https://www.youtube.com/embed/Ocz7rUAsTkU",
+            "discogs_url": "https://www.discogs.com/artist/5489051-Solid-Blake",
+            "soundcloud_url": "https://soundcloud.com/solid_blake",
+            "facebook_url": "https://www.facebook.com/ssolidblake/",
+            "instagram_url": "https://www.instagram.com/solidblake/",
+            "resident_advisor_url": "https://www.residentadvisor.net/dj/solidblake"
         }
     },
     {
@@ -26,10 +36,63 @@
         "model": "artists.artist",
         "fields": {
             "name": "alfie",
-            "description": "Alfie aka The Burrell Connection",
-            "image": "alfie.jpg",
-            "discogs": "https://www.discogs.com/artist/4220588-The-Burrell-Connection",
-            "soundcloud": "https://soundcloud.com/theburrellconnection"
+            "display_name": "Alfie",
+            "description": "Sincere, sarcastic and unassumingly seminal: Glasgow's answer to Basic Channel, Southside's answer to Pub and Sandy's answer to those endless afters. 2s on the balcony and runs to the shop. An ode to the skyline; a symphony for the local legends; a tapestry of downtempo dreamscapes - from Shawlands to Neukölln and the world beyond. A warm dose of future-proof emotion. Strap in, this is one for heads, the lovers and all those along the way. Welcome to the layer cake son.",
+            "image": "alfiejm.jpg",
+            "youtube_url": "https://www.youtube.com/embed/aLBt6-AhLgA",
+            "discogs_url": "https://www.discogs.com/artist/4220588-The-Burrell-Connection",
+            "soundcloud_url": "https://soundcloud.com/theburrellconnection",
+            "facebook_url": "https://www.facebook.com/theburrellconnection/",
+            "instagram_url": "https://www.instagram.com/theburrellconnection/",
+            "resident_advisor_url": "https://www.residentadvisor.net/dj/theburrellconnection"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "artists.artist",
+        "fields": {
+            "name": "ancients",
+            "display_name": "Ancients",
+            "description": "Now an established force in contemporary Techno, Alex McVey, better known under his stage name Ancients is someone who has seriously put in the work. Having cut his teeth DJing as a relatively unnoted (but well loved by those in the know) local in Berlin for 10 years, one could argue that by the time success knocked on his door, he was more than ready for playing the international stage. It was during these 10 years of obscurity when he refined his craft to become the singular DJ he is now.",
+            "image": "ancients.jpg",
+            "youtube_url": "https://www.youtube.com/embed/6Am-AtIXetY",
+            "discogs_url": "https://www.discogs.com/artist/2792304-R%C3%B8dh%C3%A5d",
+            "soundcloud_url": "https://soundcloud.com/alexander-mcvey",
+            "facebook_url": "https://www.facebook.com/people/R%C3%98DH%C3%85D/100044262197849",
+            "instagram_url": "https://www.instagram.com/rodhad_dystopian/",
+            "resident_advisor_url": "http://www.residentadvisor.net/dj/rodhad"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "artists.artist",
+        "fields": {
+            "name": "daveosnare",
+            "display_name": "Dave O'Snare",
+            "description": "Some people might call what I do drum 'n' bass. But I'm not going to narrow it down to what the music industry thinks is commercially viable. I'm not really into narrow thinking. Making this music is like poker. You begin with five cards. You don't play poker with two cards. That's just the rule of the game. Once you learn how to play you can bend the rules.",
+            "image": "daveosnare.jpg",
+            "youtube_url": "https://www.youtube.com/embed/Ck3WpUH7ojA",
+            "discogs_url": "https://www.discogs.com/artist/205291-Truss",
+            "soundcloud_url": "https://soundcloud.com/daveosnare",
+            "facebook_url": "https://www.facebook.com/truss.music",
+            "instagram_url": "https://www.instagram.com/dave_retrace/?hl=en",
+            "resident_advisor_url": "https://www.residentadvisor.net/dj/truss"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "artists.artist",
+        "fields": {
+            "name": "dommm",
+            "display_name": "Dommm",
+            "description": "Dommm is a genuine original. His critical acclaim spans the creative realm of the fine art community to the technological vanguard. Meanwhile, as a performing artist, he is constantly pushing conceptual frontiers, moving things forward, welcoming as many as he can to ideas and experiences that would have seemed pure science fiction when he began his career.",
+            "image": "dommm.jpg",
+            "youtube_url": "https://www.youtube.com/embed/iGrDaqzfrR8",
+            "discogs_url": "https://www.discogs.com/artist/835-Richie-Hawtin",
+            "soundcloud_url": "https://soundcloud.com/richiehawtin",
+            "facebook_url": "https://www.facebook.com/richiehawtin",
+            "instagram_url": "https://www.instagram.com/richiehawtin/",
+            "resident_advisor_url": "https://www.residentadvisor.net/dj/richiehawtin"
         }
     }
 ]
