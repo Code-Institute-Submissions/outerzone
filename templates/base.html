@@ -82,7 +82,7 @@
     {% for message in messages %}
         {% with message.level as level %}
             {% if level == 40 %}
-                <div class="alert red" role="alert">
+                <div class="alert alert-red" role="alert">
                     {{ message }}
                 </div>
             {% elif level == 30 %}

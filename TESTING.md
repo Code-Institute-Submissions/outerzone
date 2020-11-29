@@ -92,6 +92,9 @@ of code tested and produce a report. This can be found as an html file in the [h
     2. Images, names, artists and prices all match the information in the database.
     3. The artists' display names appear rather than their names (ie the artist names are capitalised and have spaces between words).
     4. All products link to the appropriate product detail page.
+
+* Search and Filters
+    1. Typing in 
     
 
 
