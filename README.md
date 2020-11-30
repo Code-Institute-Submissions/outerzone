@@ -80,11 +80,10 @@ Users visit the website because they want:
 8. As a registered user, I want to update my delivery details.
 9. As a registered user, I want to see a record of my previous purchases.
 10. As someone within the electronic music industry, I want to understand more about Outer Zone and the types of sets their artists play.
-11. As someone within the electronic music industry, I want to contact Outer Zone in order to work with them.
-12. As admin for the site, I want to be able to add products to the site.
-13. As admin for the site, I want to be able to edit and delete products on the site.
-14. As admin for the site, I want to be able to add artists to the site.
-15. As admin for the site, I want to be able to edit and delete artist details on the site.
+11. As admin for the site, I want to be able to add products to the site.
+12. As admin for the site, I want to be able to edit and delete products on the site.
+13. As admin for the site, I want to be able to add artists to the site.
+14. As admin for the site, I want to be able to edit and delete artist details on the site.
 
 ### Wireframes
 
@@ -234,6 +233,7 @@ An SQL database was used for this project. The structure of the relationships be
 
 <img src="media/ms4_data.png" style="center" alt="Data relationships">
 ---
+
 ## Technologies
 
 * [Gitpod](https://www.gitpod.io/)
