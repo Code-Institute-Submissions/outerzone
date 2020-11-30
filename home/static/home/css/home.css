@@ -1,6 +1,19 @@
 /* Home */
 
-.home-background-photo {
+.large-screen {
+    display: none;
+}
+
+.lacheetah-small-screen {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+}
+
+/* .home-background-photo {
     background-image: url('https://djmag.com/sites/default/files/storyimages/475/SJH_6058_copy.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,39 +21,19 @@
     background-size: cover;
     padding: 0;
     position: relative;
-}
-
-body:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url(photos/2452.jpg) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-}
+} */
 
 .outer-zone-text {
-    position: absolute;
-    left: 0;
-    top: 20%;
+    width: 100%;
+    margin: 0;
 }
 
+
 .artists-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
-.wardy-dom-photo {
+/* .wardy-dom-photo {
     background-image: url('https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/s960x960/64211355_2076278215814157_3377168016461529088_o.jpg?_nc_cat=104&ccb=2&_nc_sid=8024bb&_nc_ohc=H-xnTA66BoQAX919s9M&_nc_ht=scontent-lhr8-1.xx&tp=7&oh=46d21ed554c4fc5b7a3ba5239719f2e9&oe=5FE15B43');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -49,24 +42,19 @@ body:before {
     padding: 0;
     padding-top: 145px;
     position: relative;
+} */
+
+.wardy-dom-text {
+    width: 100%;
 }
 
-.ward-dom-text {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.chevron {
+.scroll {
+    display: inline-block;
     float: right;
 }
 
 @media only screen and (min-width: 768px) {
-    
-    .wardy-dom-photo {
-        background-image: url('https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/107533802_2892494737525830_9051832860834538298_o.jpg?_nc_cat=107&ccb=2&_nc_sid=8024bb&_nc_ohc=tbokJu6CB7gAX84kpCd&_nc_ht=scontent-lhr8-1.xx&oh=f842ca4eaf5c145dbb0e80ea7ecc777f&oe=5FDCF30E')
+    .small-screen {
+        display: none;
     }
 }
-
-/* @media only screen and (max-width: 480px) {
-     */
