@@ -38,7 +38,7 @@
     }
 
     .large-screen {
-        display: contents;
+        display: initial;
     }
 
     .home-background-photo {
