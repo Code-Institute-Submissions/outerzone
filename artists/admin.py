@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Artist , Event
+from .models import Artist, Event
 
-# Register your models here.
+
 class ArtistAdmin(admin.ModelAdmin):
     list_display = (
         'name',
@@ -18,6 +18,7 @@ class EventAdmin(admin.ModelAdmin):
         'date',
     )
     order = ('date',)
+
 
 admin.site.register(Artist, ArtistAdmin)
 admin.site.register(Event, EventAdmin)

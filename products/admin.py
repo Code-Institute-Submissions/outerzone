@@ -12,5 +12,5 @@ class ProductAdmin(admin.ModelAdmin):
     )
     ordering = ('artist',)
 
-admin.site.register(Product, ProductAdmin)
 
+admin.site.register(Product, ProductAdmin)

@@ -7,7 +7,6 @@ from .forms import ArtistForm
 from products.models import Product
 
 
-# Create your views here.
 def all_artists(request):
     """ View all artists """
     artists = Artist.objects.all()
@@ -22,10 +21,8 @@ def artist_detail(request, artist_id):
     artist = get_object_or_404(Artist, pk=artist_id)
     all_products = Product.objects.all()
     all_events = Event.objects.all()
-
-    products = all_products.filter(artist__name = artist)
-    events = all_events.filter(artist__name = artist)
-
+    products = all_products.filter(artist__name=artist)
+    events = all_events.filter(artist__name=artist)
     context = {
         'artist': artist,
         'products': products,
@@ -48,9 +45,10 @@ def add_artist(request):
             messages.success(request, 'Artist added')
             return redirect(reverse('artist_detail', args=[artist.id]))
         else:
-            messages.error(request, 'Artist not yet added. Please check your form.')
+            messages.error(
+                request, 'Artist not yet added. Please check your form.')
     else:
-        form=ArtistForm()
+        form = ArtistForm()
 
     form = ArtistForm()
     template = 'artists/add_artist.html'

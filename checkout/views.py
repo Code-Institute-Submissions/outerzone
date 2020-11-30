@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
-from django.views.decorators.http import require_POST 
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
@@ -76,7 +76,8 @@ def checkout(request):
                     return redirect(reverse('view_basket'))
             """ Checks whether user ticks box to save details """
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number]))
         else:
             """ ie, if order_form is not valid """
             messages.error(request, 'Error. Please check the details on your payment form.')
@@ -117,7 +118,7 @@ def checkout(request):
 
     if not stripe_public_key:
         messages.warning(request, 'Did you forget to set your public key?')
-    
+
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
@@ -126,7 +127,7 @@ def checkout(request):
     }
 
     return render(request, template, context)
-    
+
 
 def checkout_success(request, order_number):
     """ checkout information posted successfully """
