@@ -13,16 +13,6 @@
     margin: 0;
 }
 
-/* .home-background-photo {
-    background-image: url('https://djmag.com/sites/default/files/storyimages/475/SJH_6058_copy.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-    background-size: cover;
-    padding: 0;
-    position: relative;
-} */
-
 .outer-zone-text {
     width: 100%;
     margin: 0;
@@ -32,17 +22,6 @@
 .artists-text {
     width: 100%;
 }
-
-/* .wardy-dom-photo {
-    background-image: url('https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/s960x960/64211355_2076278215814157_3377168016461529088_o.jpg?_nc_cat=104&ccb=2&_nc_sid=8024bb&_nc_ohc=H-xnTA66BoQAX919s9M&_nc_ht=scontent-lhr8-1.xx&tp=7&oh=46d21ed554c4fc5b7a3ba5239719f2e9&oe=5FE15B43');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    padding: 0;
-    padding-top: 145px;
-    position: relative;
-} */
 
 .wardy-dom-text {
     width: 100%;
@@ -56,5 +35,30 @@
 @media only screen and (min-width: 768px) {
     .small-screen {
         display: none;
+    }
+
+    .large-screen {
+        display: contents;
+    }
+
+    .home-background-photo {
+        background-image: url('https://djmag.com/sites/default/files/storyimages/475/SJH_6058_copy.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: cover;
+        padding: 0;
+        position: relative;
+    }
+
+    .wardy-dom-photo {
+        background-image: url('https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/s960x960/64211355_2076278215814157_3377168016461529088_o.jpg?_nc_cat=104&ccb=2&_nc_sid=8024bb&_nc_ohc=H-xnTA66BoQAX919s9M&_nc_ht=scontent-lhr8-1.xx&tp=7&oh=46d21ed554c4fc5b7a3ba5239719f2e9&oe=5FE15B43');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+        padding-top: 145px;
+        position: relative;
     }
 }
