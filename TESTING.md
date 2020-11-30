@@ -215,11 +215,15 @@ Friends, family and colleagues were enlisted to test the site on mobile phones, 
 using different bandwidths to ensure that the there were no significant loading time lags.
 
 The following changes were made in response to user feedback:
-* Home Page images were amended so they displayed better on smaller screens. Although the Google Dev tools showed that the images displayed well on mobile, this was not actually the case when real mobile phones were used.
-* The fixed scroll for the home page was not working on mobiles.
+* The fixed scroll background images for the home page were not working on mobiles.
+* The chevrons on the home page needed to make it clear that they were for scrolling throught the page.
 * User feedback discovered that verification emails were not sending when users tried to sign up. This was amended by adding a new EMAIL_HOST_PASS to the Heroku config variables.
 
 #### Bugs 
 A bug was discovered with the admin database that prevented me from updating products. The products were listed with the image as the 
 first column. When the image was clicked, it simply displayed the image rather than the expected response of directing to the editable 
 view of the product. This problem was resolved by changing the order of the products admin listing in admin.py.
+
+It was also discovered the Apple mobile devices disable fixed scrolling of background images. This was an issue that was not identified when using the Google Devs mobile view and
+only became clear when user testing was carried out on different mobile devices. This issue was resolved by creating two different layouts for the home page - one for small screens and large screens.
+The large screen view kept the fixed background image and the small screen provided a full width image. If it were not for the looming deadline, a more elegant solution would have been found.
