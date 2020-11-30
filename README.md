@@ -106,7 +106,7 @@ The artwork for the label's record releases evoke a minimalist, futuristic aesth
 this same approach was used when designing the website. The artwork for the label's second release, Triple M EP (pictured below)
 was particularly influential.
 
-<img src="media/triplem_cover.jpg" style="center" alt="Triple M EP Artwork">
+<img src="/media/triplem_cover.jpg" style="center" alt="Triple M EP Artwork">
 
 ### Colours
 
@@ -250,6 +250,8 @@ An SQL database was used for this project. The structure of the relationships be
 * [Bootstrap](https://getbootstrap.com/) - for the responsive grid layout and navbar. All templates were tailored to the needs of the site. 
 * [Google Fonts](https://fonts.google.com/) - used to style the website fonts.
 * [Font Awesome](https://fontawesome.com/) - icons for certain buttons.
+* [GIMP](https://www.gimp.org/) - was used to resize images to improve consistency and keep file size to a minimum.
+* [Image Compressor](https://imagecompressor.com/) - used to further reduce the file sizes of images and improve loading speed on all devices.
 
 ---
 ## Testing 

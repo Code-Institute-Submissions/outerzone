@@ -9,7 +9,7 @@ The following tools were used to test the website code and layout throughout the
 * W3C Markup Validation - used to validate HTML code, although this proved difficult with JINJA also included in the code.
 * W3C CSS Validation - used to validate CSS code.
 * JS Hint - used to validate JS code
-* Pylint - to validate Python code. Some "line too long" errors were ignored as it was felt that the code was most reader friendly in its current format. Warnings of 
+* Pylint - to validate Python code. Some "line too long" errors were ignored as it was felt that the code was most reader friendly in its current format.
 
 ### Automated Testing
 Automated unit testing was used to test the code in the artists app. [Coverage.py](https://coverage.readthedocs.io/en/coverage-5.3/#) was used to determine the amount 
